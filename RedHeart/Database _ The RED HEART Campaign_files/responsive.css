@@ -1,0 +1,176 @@
+@media only screen and (min-width: 320px) and (max-width: 377px) {
+}
+
+@media only screen and (min-width: 378px) and (max-width: 462px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 869px) {
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .fem-allname {
+    display: block;
+    order: 1;
+    top: 5% !important;
+    height: 1000px;
+  }
+
+  .infographics {
+    display: none !important;
+  }
+
+  #custom-hide {
+    width: 100% !important;
+    float: none !important;
+    order: 2;
+    margin-top: -60rem;
+  }
+
+  .modal {
+    top: 0;
+  }
+
+  .modal.show .modal-dialog {
+    min-width: auto;
+  }
+}
+
+/* Extra small devices (phone, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .fem-db-filter {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 981px) {
+    .custom-tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 870px) and (max-width: 991px) {
+  .modal.show .modal-dialog {
+    height: 530px;
+  }
+  .infographics {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1166px) {
+  .modal {
+    top: 150px;
+  }
+
+  .modal.show .modal-dialog {
+    height: 475px;
+  }
+}
+
+/*For table and map*/
+@media only screen and (min-width: 981px) and (max-width: 1319.9px) {
+  .logo_container #logo {
+    height: 50%;
+  }
+
+  #fem-map-table .et_pb_column_4 {
+    width: 100%;
+  }
+
+  #fem-map-table .et_pb_column_5 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infographics {
+    margin-top: 110px;
+  }
+
+  .infographics svg {
+    right: 265px;
+    top: -228px;
+  }
+
+  .quote-box-info {
+    top: 32px;
+    right: -45px;
+  }
+
+  .fem-allname {
+    top: 17%;
+  }
+}
+
+@media only screen and (min-width: 1167px) and (max-width: 1439.9px) {
+  .modal {
+    top: 140px;
+  }
+
+  .modal.show .modal-dialog {
+    height: 480px;
+  }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media only screen and (min-width: 1320px) and (max-width: 1439.9px) {
+  .infographics .quote-box-110 {
+    margin-top: 40px !important;
+  }
+
+  .quote-box-110 .quote-box-info {
+    top: 51px;
+    right: -52px;
+    width: 59%;
+    line-height: 1rem;
+  }
+
+  .quote-box-169 .quote-box-info {
+    top: 51px !important;
+    right: -62px !important;
+    width: 59%;
+    line-height: 1rem;
+  }
+
+  .quote-box-169 .quote-name {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .quote-box-110 .quote-box-info {
+    top: 53px;
+    right: -60px;
+    line-height: 1rem;
+  }
+
+  .quote-box-110 {
+    margin-top: 30px;
+  }
+
+  .quote-box-169 .quote-name {
+    font-size: 16px;
+  }
+
+  .quote-box-169 .quote-box-info {
+    right: -64px !important;
+    top: 57px !important;
+    width: 58% !important;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1894px) {
+  .infographics img {
+    max-width: 70%;
+  }
+}
