@@ -10,9 +10,10 @@ for i in range(len(df["age"])):
         else: df.at[i, "age"] = 0
 
 # standardize all gender types, strip() bc of "male" and "male " instances
-# map to fix all typos, "associate violence" case should be "male"
-df["gender"] = df["gender"].str.lower().str.strip()
-df["gender"] = df["gender"].map({"male, fema":"male, female", "unknown gender":"unknown", "associate violence":"male"})
+# df.replace to fix all typos, "associate violence" case should be "male"
+df["gender"] = df["gender"].str.lower()
+df["gender"] = df["gender"].str.strip()
+df.replace("gender", {"male, fema":"male, female", "unknown gender":"unknown", "associate violence":"male"})
 
 filepath = Path("redheart_data_cleaned.csv")
 filepath.parent.mkdir(parents=True, exist_ok=True)
