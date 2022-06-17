@@ -6,7 +6,7 @@ st.write("""
 # Red Heart Campaign Data Visualization
 """)
 
-df = pd.read_csv("https://raw.githubusercontent.com/TangyKiwi/Worldie/master/RedHeart/redheart_data_clean.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/TangyKiwi/Worldie/master/RedHeart/redheart_data_cleaned.csv")
 st.dataframe(df)
 
 ###########################
