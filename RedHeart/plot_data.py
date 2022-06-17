@@ -13,9 +13,10 @@ st.dataframe(df)
 #           Age           #
 ###########################
 age = df.get("age")
+
 # remove non-numeric values for now, later set under 1 year to 0, set Unknown to -1
 # age = [a for a in age if a.isnumeric()]
-# convert everything to int
+# handled in clean_data.py now
 age = list(map(int, age))
 
 s = pd.DataFrame({"Age":age})["Age"].value_counts()
