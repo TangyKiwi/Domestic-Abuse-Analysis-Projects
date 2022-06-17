@@ -45,7 +45,7 @@ st.plotly_chart(fig)
 #           Accused Gender           #
 ######################################
 gender = df.get("gender")
-s = pd.DataFrame({"Accused Gender":gender})["Accused Gender"].value_Counts()
+s = pd.DataFrame({"Accused Gender":gender})["Accused Gender"].value_counts()
 df_gender = pd.DataFrame({"Accused Gender":s.index, "Count":s.values})
 fig = px.bar(df_gender, x="Accused Gender", y="Count", title="Accused Gender")
 st.plotly_chart(fig)
