@@ -7,6 +7,7 @@ st.write("""
 """)
 
 df = pd.read_csv("https://raw.githubusercontent.com/TangyKiwi/Worldie/master/RedHeart/redheart_data_cleaned.csv")
+df.style.set_caption("Raw Data")
 st.dataframe(df)
 
 ###########################
