@@ -21,7 +21,7 @@ df = df.replace({"gender":{"male, fema":"male, female", "unknown gender":"unknow
 # df.replace to fix all typos
 df["context"] = df["context"].str.lower()
 df["context"] = df["context"].str.strip()
-df = df.replace({"context":{"unknown context":"unknown", "unsolved":"unknown", "unknown context of death":"unknown", "incomplete entry":"unknown", "domestic violece":"domestic violence", "associate vioence":"associate violence"}})
+df = df.replace({"context":{"unknown context":"unknown", "unsolved":"unknown", "unknown context of death":"unknown", "incomplete entry":"unknown", "bashing":"unknown", "domestic violece":"domestic violence", "associate vioence":"associate violence"}})
 
 filepath = Path("redheart_data_cleaned.csv")
 filepath.parent.mkdir(parents=True, exist_ok=True)
