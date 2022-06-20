@@ -15,13 +15,13 @@ for i in range(len(df["age"])):
 # df.replace to fix all typos, "associate violence" case should be "male"
 df["gender"] = df["gender"].str.lower()
 df["gender"] = df["gender"].str.strip()
-df = df.replace({"gender": {"male, fema":"male, female", "unknown gender":"unknown", "associate violence":"male"}})
+df = df.replace({"gender":{"male, fema":"male, female", "unknown gender":"unknown", "associate violence":"male"}})
 
 # Context
 # df.replace to fix all typos
 df["context"] = df["context"].str.lower()
 df["context"] = df["context"].str.strip()
-df = df.replace({"unknown context":"unknown", "unsolved":"unknown", "unknown context of death":"unknown", "incomplete entry":"unknown", "domestic violece":"domestic violence", "associate violece":"associate violence"})
+df = df.replace({"context":{"unknown context":"unknown", "unsolved":"unknown", "unknown context of death":"unknown", "incomplete entry":"unknown", "domestic violece":"domestic violence", "associate vioence":"associate violence"}})
 
 filepath = Path("redheart_data_cleaned.csv")
 filepath.parent.mkdir(parents=True, exist_ok=True)
