@@ -29,7 +29,7 @@ age_groups = pd.cut(age, bins=[-2, -1, 14, 24, 64, 100])
 # (-2, -1] (-1, 14] (14, 24] (24, 64] (64, 100]
 unique, counts = np.unique(age_groups, return_counts=True)
 age_groups = dict(zip(unique, counts))
-age_groups = pd.DataFrame({"Age Groups":["Unknown", "Children", "Youth", "Adults", "Seniors"], "Count":age_groups.values()})
+age_groups = pd.DataFrame({"Age Groups":["Unknown", "Children (0-14)", "Youth (15-24)", "Adults (25-64)", "Seniors (65+)"], "Count":age_groups.values()})
 fig = px.bar(age_groups, x="Age Groups", y="Count", title="Age Groups")
 st.plotly_chart(fig)
 fig = px.pie(age_groups, values="Count", names="Age Groups", title="Age Groups")
