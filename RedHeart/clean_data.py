@@ -27,9 +27,13 @@ df = df.replace({"context":{"unknown context":"unknown", "unsolved":"unknown", "
 # Cause
 df["cause"] = df["cause"].str.lower()
 df["cause"] = df["cause"].str.strip()
-df["cause"] = df["cause"].replace({"raped":"rape", "raper":"rape", "bashed":"bashing", "unknown cause of death":"unknown", "poisoned": "poison", "poisoning": "poison", "shootingg": "shooting", "tortured": "torture", "drowned": "drowning", "shaken":"shaking", "\}":")", "\.":", "}, regex=True)
+df["cause"] = df["cause"].replace({"raped":"rape", "raper":"rape", "bashed":"bashing", "unknown cause of death":"unknown", "poisoned": "poison", "poisoning": "poison", "shootingg": "shooting", "tortured": "torture", "drowned": "drowning", "shaken":"shaking", "stabbbing":"stabbing", "\}":")", "\.":", "}, regex=True)
 df["cause"] = df["cause"].str.replace("shooting", "shootin")
 df["cause"] = df["cause"].str.replace("shootin", "shooting")
+df["cause"] = df["cause"].str.replace("bombing", "bomb")
+df["cause"] = df["cause"].str.replace("bomb", "bombing")
+df["cause"] = df["cause"].str.replace("drug overdose", "overdose")
+df["cause"] = df["cause"].str.replace("overdose", "drug overdose")
 df["cause"] = df["cause"].replace({"gas poison":"gas poisoning", "unknown cause":"unknown"}, regex=True)
 for i in range(len(df["cause"])):
     df.at[i, "cause"] = re.sub(r'\([^)]*\)', '', df["cause"][i])
