@@ -51,7 +51,7 @@ st.plotly_chart(fig)
 causes = []
 for i in range(len(df["cause"])):
     for c in df["cause"][i].split(", "):
-        causes.append(c)
+        causes.append(c.strip())
 
 s = pd.DataFrame({"Cause":causes})["Cause"].value_counts()
 cause_counts = pd.DataFrame({"Cause":s.index, "Count":s.values})
