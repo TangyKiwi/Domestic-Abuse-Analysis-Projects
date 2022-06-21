@@ -1,5 +1,6 @@
 import pandas as pd
 from pathlib import Path
+import re
 
 df = pd.read_csv("https://raw.githubusercontent.com/TangyKiwi/Worldie/master/RedHeart/redheart_data.csv")
 
@@ -22,6 +23,13 @@ df = df.replace({"gender":{"male, fema":"male, female", "unknown gender":"unknow
 df["context"] = df["context"].str.lower()
 df["context"] = df["context"].str.strip()
 df = df.replace({"context":{"unknown context":"unknown", "unsolved":"unknown", "unknown context of death":"unknown", "incomplete entry":"unknown", "bashing":"unknown", "domestic violece":"domestic violence", "associate vioence":"associate violence", "neighbour violence":"associate violence", "stanger violence":"stranger violence"}})
+
+# Cause
+df["cause"] = df["cause"].str.lower()
+df["cause"] = df["cause"].str.strip()
+df["cause"] = df["cause"].replace({"raped":"rape", "poisoned":"poison", "poisoning":"poison", "shootin":"shooting", "shootingg":"shooting", "tortured":"torture", "\}":")", "\.":","}, regex=True)
+for i in range(len(df["cause"])):
+    df.at[i, "cause"] = re.sub(r'\([^)]*\)', '', df["cause"][i])
 
 filepath = Path("redheart_data_cleaned.csv")
 filepath.parent.mkdir(parents=True, exist_ok=True)

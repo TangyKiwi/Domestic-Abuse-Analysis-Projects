@@ -45,6 +45,19 @@ st.plotly_chart(fig)
 fig = px.pie(context_counts, values="Count", names="Context", title="Context")
 st.plotly_chart(fig)
 
+#############################
+#           Cause           #
+#############################
+causes = []
+for i in range(len(df["cause"])):
+    for c in df["cause"][i].split(", "):
+        causes.append(c)
+
+s = pd.DataFrame({"Cause":causes})["Cause"].value_counts()
+cause_counts = pd.DataFrame({"Cause":s.index, "Count":s.values})
+fig = px.bar(cause_counts, x="Cause", y="Count", title="Cause of Death")
+st.plotly_chart(fig)
+
 ############################
 #           Year           #
 ############################
