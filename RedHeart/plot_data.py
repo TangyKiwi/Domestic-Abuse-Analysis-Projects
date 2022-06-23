@@ -78,3 +78,35 @@ fig = px.bar(gender_counts, x="Accused Gender", y="Count", title="Accused Gender
 st.plotly_chart(fig)
 fig = px.pie(gender_counts, values="Count", names="Accused Gender", title="Accused Gender")
 st.plotly_chart(fig)
+
+##############################
+#           Charge           #
+##############################
+charge = df.get("charge")
+s = pd.DataFrame({"Charge":charge})["Charge"].value_counts()
+charge_counts = pd.DataFrame({"Charge":s.index, "Count":s.values})
+fig = px.bar(charge_counts, x="Charge", y="Count", title="Charge")
+st.plotly_chart(fig)
+
+################################
+#           Sentence           #
+################################
+sentence = df.get("sentence").str.lower()
+for i in range(len(sentence)):
+    if "sentenced to " in sentence[i]:
+        sentence[i] = "sentenced to x years"
+    elif "served" in sentence[i]:
+        sentence[i] = "served x years"
+s = pd.DataFrame({"Sentence":sentence})["Sentence"].value_counts()
+sentence_counts = pd.DataFrame({"Sentence":s.index, "Count":s.values})
+fig = px.bar(sentence_counts, x="Sentence", y="Count", title="Sentence")
+st.plotly_chart(fig)
+
+################################
+#           Relation           #
+################################
+relation = df.get("relation").str.lower()
+s = pd.DataFrame({"Relation":relation})["Relation"].value_counts()
+relation_counts = pd.DataFrame({"Relation":s.index, "Count":s.values})
+fig = px.bar(relation_counts, x="Relation", y="Count", title="Relation")
+st.plotly_chart(fig)
