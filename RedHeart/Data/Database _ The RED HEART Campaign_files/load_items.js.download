@@ -1,0 +1,1709 @@
+$(document).ready(function(){
+    let pluginUrl = DBCASEscript.pluginUrl;
+    let url = pluginUrl + '/case-manager/admin';
+    let public_url = pluginUrl + '/case-manager/public';
+    load_items = function(){
+        $('#fem-loader').css('display', 'block');
+        $('.infographics').hide();
+        $.post( ajax_object.ajax_url, {
+            action:   'get_femicide_data',
+            _ajax_nonce: ajax_object.ajax_nonce
+        }, function( response ) {
+            if( response.status == "success" ) {
+                $("#custom-hide").css("opacity", "1");
+                current_year = false;
+                content = '';
+                let allname = '';
+                console.log(response.data);
+                $.each(response.data, function( index, val ){
+                    
+                    val.victim_name = val.victim_name.trim();
+                    val.story = val.story.replace(/"|“|”/g, '*');
+					val.story = val.story.replace(/\?s/g, '\'s');
+                    
+                    let year = val.year_of_death;
+                    let source1 = '', source2 = '';
+
+                    if(val.media_source !== '') {
+                        let source = val.media_source.split(",");
+                        source1 = source[0];
+
+                        if(source[1] !== undefined) {
+                            source2 = source[1];
+                        }
+                    }
+
+                    if(year != current_year) {
+                        
+                        content += '</div>'+
+                                    '<div id="custom-search">'+
+                                        '<div class="custom-year-category">'+
+                                            '<h2 class="year_background">'+ year +'</h2>'+
+                                        '</div>';
+                        current_year = year;
+                    }
+
+                    content +=   '<div id="res-'+ val.id +'" class="custom-case-display custom-tooltip '+ val.id +'"'+
+                                 'data-img="'+val.victim_img+'"'+
+                                 'data-victim_name="'+val.victim_name+'"'+
+                                 'data-age_of_death="'+val.age_of_death+'"'+
+                                 'data-location="'+val.death_location+'"'+
+                                 'data-year_of_death="'+val.year_of_death+'"'+
+                                 'data-context_of_death="'+val.context_of_death+'"'+
+                                 'data-cause_of_death="'+val.cause_of_death+'"'+
+                                 'data-rel_to_victim="'+val.perpetrator_relationship_to_victim+'"'+
+                                 'data-gender="'+val.perpetrator_gender+'"'+
+                                 'data-charge="'+val.charge+'"'+
+                                 'data-min_sentence="'+val.minimum_sentence+'"'+
+                                 'data-story="'+val.story+'"'+
+                                 'data-source1="'+source1+'"'+
+                                 'data-source2="'+source2+'">';
+                                if((val.age_of_death <= 17) || (val.age_of_death.indexOf('month') != -1) || (val.age_of_death.indexOf('week') != -1) || (val.age_of_death.indexOf('day') != -1)){
+                                    content += '<img id="lazy-img" src="'+ pluginUrl +'/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                                } else {
+                                    content += '<img id="lazy-img" src="'+ pluginUrl +'/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                                }
+                    content +=      '<span class="tooltiptext">'+ val.victim_name + ", " + val.age_of_death + ". " + val.context_of_death + '</span>'+
+                                '</div>';
+                    
+                });
+                $('#fem-loader').hide();
+                $('#custom-hide').html(content);
+                $('.infographics').show();
+                $(document).on('scroll', window, function() {
+                    playname();
+                });
+            } else {
+                alert("something went wrong");
+            }
+        }, "json"
+        );
+    }
+
+    // Get infograph data
+    load_infograph = function() {
+
+        // Get infograph data
+        $.post( ajax_object.ajax_url, {
+            action:   'get_infograph_data',
+            _ajax_nonce: ajax_object.ajax_nonce
+        }, function( response ) {
+            if( response.status == "success" ) {
+
+                let data = '';
+                let img = '';
+                $.each(response.data, function( index, val ){
+                    
+                    if(val.id == 4708){
+                        img = 'eurydice.png';
+                    }
+                    else if(val.id == 4968) {
+                        img = 'blair-heart.png';
+                    }
+                    else if(val.id == 5555) {
+                        img = 'jennifer_morant.png';
+                    }
+                    else if(val.id == 5453) {
+                        img = 'nikita_chawla.png';
+                    }
+                    else if(val.id == 5436) {
+                        img = 'deborah_balbi.png';
+                    }
+                    else if(val.id == 6287) {
+                        img = 'emma_jade_pawelski.png';
+                    }
+                    else if(val.id == 5484) {
+                        img = 'jody_websdale.png';
+                    }
+                    else if(val.id == 6071) {
+                        img = 'lisa_harnum.png';
+                    }
+                    else if(val.id == 6026) {
+                        img = 'preethi_reddy.png';
+                    }
+                    else if(val.id == 5529) {
+                        img = 'anna_marie_kemp.png';
+                    }
+                    else if(val.id == 6220) {
+                        img = 'carrol_jean_smith.png';
+                    }
+                    else if(val.id == 5201) {
+                        img = 'cody_hutchings.png';
+                    }
+                    else if(val.id == 4403) {
+                        img = 'dorothy_britton.png';
+                    }
+                    else if(val.id == 5512) {
+                        img = 'james_dean.png';
+                    }
+                    else if(val.id == 6196) {
+                        img = 'jordan_anderson.png';
+                    }
+                    else if(val.id == 6322) {
+                        img = 'louise_o_brien.png';
+                    }
+                    else if(val.id == 4718) {
+                        img = 'nadine_haag.png';
+                    }
+                    else if(val.id == 4709) {
+                        img = 'sandra_morales.png';
+                    }
+                    // else if(val.id == 4901) {
+                    //     img = 'wendy_bell.png';
+                    // }
+                    else if(val.id == 5407) {
+                        img = 'yvonne_powell.png';
+                    }
+                    else if(val.id == 5175) {
+                        img = 'gye_william_staples.png';
+                    }
+                    else if(val.id == 4958) {
+                        img = 'lauren_hickson.png';
+                    }
+                    else if(val.id == 5955) {
+                        img = 'nancy_kaye_king.png';
+                    }
+                    else if(val.id == 5677) {
+                        img = 'john_ashfield.png';
+                    }
+                    else if(val.id == 5923) {
+                        img = 'angela_rose_taylor.png';
+                    }
+                    else if(val.id == 5745) {
+                        img = 'noreen_hannon.png';
+                    }
+                    else if(val.id == 6163) {
+                        img = 'peter_stogneff.png';
+                    }
+                    else if(val.id == 5593) {
+                        img = 'lina_marciano.png';
+                    }
+                    else if(val.id == 4906) {
+                        img = 'susan_knight.png';
+                    }
+                    else if(val.id == 4328) {
+                        img = 'joanne_ratcliffe.png';
+                    }
+                    else if(val.id == 4885) {
+                        img = 'joan_maree_wech.png';
+                    }
+                    else if(val.id == 6206) {
+                        img = 'christine_sharrock.png';
+                    }
+                    else if(val.id == 5049) {
+                        img = 'simon_brook.png';
+                    }
+                    else if(val.id == 6011) {
+                        img = 'irene_kiddle.png';
+                    }
+                    else if(val.id == 5456) {
+                        img = 'susan_oyston.png';
+                    }
+                    else if(val.id == 4526) {
+                        img = 'graeme_thorne.png';
+                    }
+                    else if(val.id == 6182) {
+                        img = 'june_algie.png';
+                    }
+                    else if(val.id == 5466) {
+                        img = 'gladys_hosking.png';
+                    }
+                    else if(val.id == 4797) {
+                        img = 'stella_ivy_farnworth.png';
+                    }
+                    else if(val.id == 4578) {
+                        img = 'marjorie_norval.png';
+                    }
+                    else if(val.id == 4427) {
+                        img = 'jean_morris.png';
+                    }
+                    else if(val.id == 5448) {
+                        img = 'alma_tirtschke.png';
+                    }
+                    else if(val.id == 5330) {
+                        img = 'annie_birkett.png';
+                    }
+                    else if(val.id == 4725) {
+                        img = 'ivy_alexandra_mitchell.png';
+                    }
+                    else if(val.id == 6294) {
+                        img = 'emily_mather.png';
+                    }
+                    else if(val.id == 5873) {
+                        img = 'mable_needle.png';
+                    }
+                    else if(val.id == 5698) {
+                        img = 'anna_katherine_krieger.png';
+                    }
+                    else {
+                        img = 'img_temp.png';
+                    }
+
+                    let story = val.story.substring(0,120) + '<br><a data-toggle="modal" data-target="#modal-'+ val.id +'" href="" class="more fem-color-red"> Read more</a>';
+                    data += '<div class="quote-box-'+ val.id +' position-relative">'+
+                                '<img src="'+ public_url +'/assets/images/'+ img +'">'+
+                            '</div>';
+                    
+                });
+                $('.infographics').prepend(data);
+                
+            } 
+        }, "json"
+        );
+
+    }
+
+    load_items();
+    load_infograph();
+    // load_table();
+
+    // Filter Year
+    $(document).on("change", "#fem-filter-year", function () {
+        let year = $(this).val();
+        // console.log(year);
+        $("span.selection-name-year").text(year);
+        if (year != "All") {
+          $("#fem-loader").css("display", "block");
+          $(".infographics").hide();
+          $("#custom-hide").css("opacity", "0");
+    
+          $.post(
+            ajax_object.ajax_url,
+            {
+              action: "search_femicide_data",
+              year: year,
+              _ajax_nonce: ajax_object.ajax_nonce,
+            },
+            function (response) {
+              if (response.status == "success") {
+                $("#fem-loader").css("display", "none");
+                $("#custom-hide").css("opacity", "1");
+                current_year = false;
+                url = pluginUrl + "/case-manager/admin";
+                content = "";
+                $.each(response.data, function (index, val) {
+                  val.victim_name = val.victim_name.trim();
+                  val.story = val.story.replace(/"|“|”/g, "*");
+                  val.story = val.story.replace(/\?s/g, "'s");
+    
+                  let date = val.year_of_death.split("-");
+                  let year = date[0];
+                  let source1 = "",
+                    source2 = "";
+    
+                  if (val.media_source !== "") {
+                    let source = val.media_source.split(",");
+                    source1 = source[0];
+    
+                    if (source[1] !== undefined) {
+                      source2 = source[1];
+                    }
+                  }
+    
+                  if (year != current_year) {
+                    content +=
+                      "</div>" +
+                      '<div id="custom-search">' +
+                      '<div class="custom-year-category">' +
+                      '<h2 class="year_background">' +
+                      year +
+                      "</h2>" +
+                      "</div>";
+                    current_year = year;
+                  }
+    
+                  content +=
+                    '<div id="res-' +
+                    val.id +
+                    '" class="custom-case-display custom-tooltip ' +
+                    val.id +
+                    '"' +
+                    'data-img="' +
+                    val.victim_img +
+                    '"' +
+                    'data-victim_name="' +
+                    val.victim_name +
+                    '"' +
+                    'data-age_of_death="' +
+                    val.age_of_death +
+                    '"' +
+                    'data-location="' +
+                    val.death_location +
+                    '"' +
+                    'data-year_of_death="' +
+                    val.year_of_death +
+                    '"' +
+                    'data-context_of_death="' +
+                    val.context_of_death +
+                    '"' +
+                    'data-cause_of_death="' +
+                    val.cause_of_death +
+                    '"' +
+                    'data-rel_to_victim="' +
+                    val.perpetrator_relationship_to_victim +
+                    '"' +
+                    'data-gender="' +
+                    val.perpetrator_gender +
+                    '"' +
+                    'data-charge="' +
+                    val.charge +
+                    '"' +
+                    'data-min_sentence="' +
+                    val.minimum_sentence +
+                    '"' +
+                    'data-story="' +
+                    val.story +
+                    '"' +
+                    'data-source1="' +
+                    source1 +
+                    '"' +
+                    'data-source2="' +
+                    source2 +
+                    '">';
+                  if (
+                    val.age_of_death <= 17 ||
+                    val.age_of_death.indexOf("months") != -1 ||
+                    val.age_of_death.indexOf("week") != -1 ||
+                    val.age_of_death.indexOf("day") != -1 ||
+                    val.age_of_death.indexOf("Unknown Age") != -1
+                  ) {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                  } else {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                  }
+                  content +=
+                    '<span class="tooltiptext">' +
+                    val.victim_name +
+                    ", " +
+                    val.age_of_death +
+                    ". " +
+                    val.context_of_death +
+                    "</span>" +
+                    "</div>";
+                });
+              }
+              $("#custom-hide").html(content);
+              // else {
+              //     alert("something went wrong");
+              // }
+            },
+            "json"
+          );
+        } else {
+          $("#custom-hide").css("opacity", "0");
+          load_items();
+        }
+    });
+
+    // Filter by Cause of death
+    $(document).on("change", "#fem-filter-cause", function () {
+        let cause = $(this).val();
+        // console.log(year);
+        $("span.selection-name-cause").text(cause);
+        if (cause != "All") {
+          $("#fem-loader").css("display", "block");
+          $(".infographics").hide();
+          $("#custom-hide").css("opacity", "0");
+    
+          $.post(
+            ajax_object.ajax_url,
+            {
+              action: "search_femicide_data",
+              cause: cause,
+              _ajax_nonce: ajax_object.ajax_nonce,
+            },
+            function (response) {
+              if (response.status == "success") {
+                $("#fem-loader").css("display", "none");
+                $("#custom-hide").css("opacity", "1");
+                current_year = false;
+                url = pluginUrl + "/case-manager/admin";
+                content = "";
+                $.each(response.data, function (index, val) {
+                  val.victim_name = val.victim_name.trim();
+                  val.story = val.story.replace(/"|“|”/g, "*");
+                  val.story = val.story.replace(/\?s/g, "'s");
+    
+                  let date = val.year_of_death.split("-");
+                  let year = date[0];
+                  let source1 = "",
+                    source2 = "";
+    
+                  if (val.media_source !== "") {
+                    let source = val.media_source.split(",");
+                    source1 = source[0];
+    
+                    if (source[1] !== undefined) {
+                      source2 = source[1];
+                    }
+                  }
+    
+                  if (year != current_year) {
+                    content +=
+                      "</div>" +
+                      '<div id="custom-search">' +
+                      '<div class="custom-year-category">' +
+                      '<h2 class="year_background">' +
+                      year +
+                      "</h2>" +
+                      "</div>";
+                    current_year = year;
+                  }
+    
+                  content +=
+                    '<div id="res-' +
+                    val.id +
+                    '" class="custom-case-display custom-tooltip ' +
+                    val.id +
+                    '"' +
+                    'data-img="' +
+                    val.victim_img +
+                    '"' +
+                    'data-victim_name="' +
+                    val.victim_name +
+                    '"' +
+                    'data-age_of_death="' +
+                    val.age_of_death +
+                    '"' +
+                    'data-location="' +
+                    val.death_location +
+                    '"' +
+                    'data-year_of_death="' +
+                    val.year_of_death +
+                    '"' +
+                    'data-context_of_death="' +
+                    val.context_of_death +
+                    '"' +
+                    'data-cause_of_death="' +
+                    val.cause_of_death +
+                    '"' +
+                    'data-rel_to_victim="' +
+                    val.perpetrator_relationship_to_victim +
+                    '"' +
+                    'data-gender="' +
+                    val.perpetrator_gender +
+                    '"' +
+                    'data-charge="' +
+                    val.charge +
+                    '"' +
+                    'data-min_sentence="' +
+                    val.minimum_sentence +
+                    '"' +
+                    'data-story="' +
+                    val.story +
+                    '"' +
+                    'data-source1="' +
+                    source1 +
+                    '"' +
+                    'data-source2="' +
+                    source2 +
+                    '">';
+                  if (
+                    val.age_of_death <= 17 ||
+                    val.age_of_death.indexOf("months") != -1 ||
+                    val.age_of_death.indexOf("week") != -1 ||
+                    val.age_of_death.indexOf("day") != -1 ||
+                    val.age_of_death.indexOf("Unknown Age") != -1
+                  ) {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                  } else {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                  }
+                  content +=
+                    '<span class="tooltiptext">' +
+                    val.victim_name +
+                    ", " +
+                    val.age_of_death +
+                    ". " +
+                    val.context_of_death +
+                    "</span>" +
+                    "</div>";
+                });
+              }
+              $("#custom-hide").html(content);
+            },
+            "json"
+          );
+        } else {
+          $("#custom-hide").css("opacity", "0");
+          load_items();
+        }
+    });
+
+    // Filter by Context of death
+    $(document).on("change", "#fem-filter-context", function () {
+        let context = $(this).val();
+        $("span.selection-name-context").text(context);
+        if (context != "All") {
+          $("#fem-loader").css("display", "block");
+          $(".infographics").hide();
+          $("#custom-hide").css("opacity", "0");
+    
+          $.post(
+            ajax_object.ajax_url,
+            {
+              action: "search_femicide_data",
+              context: context,
+              _ajax_nonce: ajax_object.ajax_nonce,
+            },
+            function (response) {
+              if (response.status == "success") {
+                $("#fem-loader").css("display", "none");
+                $("#custom-hide").css("opacity", "1");
+                current_year = false;
+                url = pluginUrl + "/case-manager/admin";
+                content = "";
+                $.each(response.data, function (index, val) {
+                  val.victim_name = val.victim_name.trim();
+                  val.story = val.story.replace(/"|“|”/g, "*");
+                  val.story = val.story.replace(/\?s/g, "'s");
+    
+                  let date = val.year_of_death.split("-");
+                  let year = date[0];
+                  let source1 = "",
+                    source2 = "";
+    
+                  if (val.media_source !== "") {
+                    let source = val.media_source.split(",");
+                    source1 = source[0];
+    
+                    if (source[1] !== undefined) {
+                      source2 = source[1];
+                    }
+                  }
+    
+                  if (year != current_year) {
+                    content +=
+                      "</div>" +
+                      '<div id="custom-search">' +
+                      '<div class="custom-year-category">' +
+                      '<h2 class="year_background">' +
+                      year +
+                      "</h2>" +
+                      "</div>";
+                    current_year = year;
+                  }
+    
+                  content +=
+                    '<div id="res-' +
+                    val.id +
+                    '" class="custom-case-display custom-tooltip ' +
+                    val.id +
+                    '"' +
+                    'data-img="' +
+                    val.victim_img +
+                    '"' +
+                    'data-victim_name="' +
+                    val.victim_name +
+                    '"' +
+                    'data-age_of_death="' +
+                    val.age_of_death +
+                    '"' +
+                    'data-location="' +
+                    val.death_location +
+                    '"' +
+                    'data-year_of_death="' +
+                    val.year_of_death +
+                    '"' +
+                    'data-context_of_death="' +
+                    val.context_of_death +
+                    '"' +
+                    'data-cause_of_death="' +
+                    val.cause_of_death +
+                    '"' +
+                    'data-rel_to_victim="' +
+                    val.perpetrator_relationship_to_victim +
+                    '"' +
+                    'data-gender="' +
+                    val.perpetrator_gender +
+                    '"' +
+                    'data-charge="' +
+                    val.charge +
+                    '"' +
+                    'data-min_sentence="' +
+                    val.minimum_sentence +
+                    '"' +
+                    'data-story="' +
+                    val.story +
+                    '"' +
+                    'data-source1="' +
+                    source1 +
+                    '"' +
+                    'data-source2="' +
+                    source2 +
+                    '">';
+                  if (
+                    val.age_of_death <= 17 ||
+                    val.age_of_death.indexOf("months") != -1 ||
+                    val.age_of_death.indexOf("week") != -1 ||
+                    val.age_of_death.indexOf("day") != -1 ||
+                    val.age_of_death.indexOf("Unknown Age") != -1
+                  ) {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                  } else {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                  }
+                  content +=
+                    '<span class="tooltiptext">' +
+                    val.victim_name +
+                    ", " +
+                    val.age_of_death +
+                    ". " +
+                    val.context_of_death +
+                    "</span>" +
+                    "</div>";
+                });
+              }
+              $("#custom-hide").html(content);
+            },
+            "json"
+          );
+        } else {
+          $("#custom-hide").css("opacity", "0");
+          load_items();
+        }
+    });
+
+    // Filter by Gender Perp
+    $(document).on("change", "#fem-filter-perp", function () {
+        let perp = $(this).val();
+        $("span.selection-name-perp").text(perp);
+        if (perp != "All") {
+          $("#fem-loader").css("display", "block");
+          $(".infographics").hide();
+          $("#custom-hide").css("opacity", "0");
+    
+          $.post(
+            ajax_object.ajax_url,
+            {
+              action: "search_femicide_data",
+              perp: perp,
+              _ajax_nonce: ajax_object.ajax_nonce,
+            },
+            function (response) {
+              if (response.status == "success") {
+                $("#fem-loader").css("display", "none");
+                $("#custom-hide").css("opacity", "1");
+                current_year = false;
+                url = pluginUrl + "/case-manager/admin";
+                content = "";
+                $.each(response.data, function (index, val) {
+                  val.victim_name = val.victim_name.trim();
+                  val.story = val.story.replace(/"|“|”/g, "*");
+                  val.story = val.story.replace(/\?s/g, "'s");
+    
+                  let date = val.year_of_death.split("-");
+                  let year = date[0];
+                  let source1 = "",
+                    source2 = "";
+    
+                  if (val.media_source !== "") {
+                    let source = val.media_source.split(",");
+                    source1 = source[0];
+    
+                    if (source[1] !== undefined) {
+                      source2 = source[1];
+                    }
+                  }
+    
+                  if (year != current_year) {
+                    content +=
+                      "</div>" +
+                      '<div id="custom-search">' +
+                      '<div class="custom-year-category">' +
+                      '<h2 class="year_background">' +
+                      year +
+                      "</h2>" +
+                      "</div>";
+                    current_year = year;
+                  }
+    
+                  content +=
+                    '<div id="res-' +
+                    val.id +
+                    '" class="custom-case-display custom-tooltip ' +
+                    val.id +
+                    '"' +
+                    'data-img="' +
+                    val.victim_img +
+                    '"' +
+                    'data-victim_name="' +
+                    val.victim_name +
+                    '"' +
+                    'data-age_of_death="' +
+                    val.age_of_death +
+                    '"' +
+                    'data-location="' +
+                    val.death_location +
+                    '"' +
+                    'data-year_of_death="' +
+                    val.year_of_death +
+                    '"' +
+                    'data-context_of_death="' +
+                    val.context_of_death +
+                    '"' +
+                    'data-cause_of_death="' +
+                    val.cause_of_death +
+                    '"' +
+                    'data-rel_to_victim="' +
+                    val.perpetrator_relationship_to_victim +
+                    '"' +
+                    'data-gender="' +
+                    val.perpetrator_gender +
+                    '"' +
+                    'data-charge="' +
+                    val.charge +
+                    '"' +
+                    'data-min_sentence="' +
+                    val.minimum_sentence +
+                    '"' +
+                    'data-story="' +
+                    val.story +
+                    '"' +
+                    'data-source1="' +
+                    source1 +
+                    '"' +
+                    'data-source2="' +
+                    source2 +
+                    '">';
+                  if (
+                    val.age_of_death <= 17 ||
+                    val.age_of_death.indexOf("months") != -1 ||
+                    val.age_of_death.indexOf("week") != -1 ||
+                    val.age_of_death.indexOf("day") != -1 ||
+                    val.age_of_death.indexOf("Unknown Age") != -1
+                  ) {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                  } else {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                  }
+                  content +=
+                    '<span class="tooltiptext">' +
+                    val.victim_name +
+                    ", " +
+                    val.age_of_death +
+                    ". " +
+                    val.context_of_death +
+                    "</span>" +
+                    "</div>";
+                });
+              }
+              $("#custom-hide").html(content);
+            },
+            "json"
+          );
+        } else {
+          $("#custom-hide").css("opacity", "0");
+          load_items();
+        }
+    });
+
+    // Filter by Outcome
+    $(document).on("change", "#fem-filter-outcome", function () {
+        let outcome = $(this).val();
+        $("span.selection-name-outcome").text(outcome);
+        if (outcome != "All") {
+          $("#fem-loader").css("display", "block");
+          $(".infographics").hide();
+          $("#custom-hide").css("opacity", "0");
+    
+          $.post(
+            ajax_object.ajax_url,
+            {
+              action: "search_femicide_data",
+              outcome: outcome,
+              _ajax_nonce: ajax_object.ajax_nonce,
+            },
+            function (response) {
+              if (response.status == "success") {
+                $("#fem-loader").css("display", "none");
+                $("#custom-hide").css("opacity", "1");
+                current_year = false;
+                url = pluginUrl + "/case-manager/admin";
+                content = "";
+                $.each(response.data, function (index, val) {
+                  val.victim_name = val.victim_name.trim();
+                  val.story = val.story.replace(/"|“|”/g, "*");
+                  val.story = val.story.replace(/\?s/g, "'s");
+    
+                  let date = val.year_of_death.split("-");
+                  let year = date[0];
+                  let source1 = "",
+                    source2 = "";
+    
+                  if (val.media_source !== "") {
+                    let source = val.media_source.split(",");
+                    source1 = source[0];
+    
+                    if (source[1] !== undefined) {
+                      source2 = source[1];
+                    }
+                  }
+    
+                  if (year != current_year) {
+                    content +=
+                      "</div>" +
+                      '<div id="custom-search">' +
+                      '<div class="custom-year-category">' +
+                      '<h2 class="year_background">' +
+                      year +
+                      "</h2>" +
+                      "</div>";
+                    current_year = year;
+                  }
+    
+                  content +=
+                    '<div id="res-' +
+                    val.id +
+                    '" class="custom-case-display custom-tooltip ' +
+                    val.id +
+                    '"' +
+                    'data-img="' +
+                    val.victim_img +
+                    '"' +
+                    'data-victim_name="' +
+                    val.victim_name +
+                    '"' +
+                    'data-age_of_death="' +
+                    val.age_of_death +
+                    '"' +
+                    'data-location="' +
+                    val.death_location +
+                    '"' +
+                    'data-year_of_death="' +
+                    val.year_of_death +
+                    '"' +
+                    'data-context_of_death="' +
+                    val.context_of_death +
+                    '"' +
+                    'data-cause_of_death="' +
+                    val.cause_of_death +
+                    '"' +
+                    'data-rel_to_victim="' +
+                    val.perpetrator_relationship_to_victim +
+                    '"' +
+                    'data-gender="' +
+                    val.perpetrator_gender +
+                    '"' +
+                    'data-charge="' +
+                    val.charge +
+                    '"' +
+                    'data-min_sentence="' +
+                    val.minimum_sentence +
+                    '"' +
+                    'data-story="' +
+                    val.story +
+                    '"' +
+                    'data-source1="' +
+                    source1 +
+                    '"' +
+                    'data-source2="' +
+                    source2 +
+                    '">';
+                  if (
+                    val.age_of_death <= 17 ||
+                    val.age_of_death.indexOf("months") != -1 ||
+                    val.age_of_death.indexOf("week") != -1 ||
+                    val.age_of_death.indexOf("day") != -1 ||
+                    val.age_of_death.indexOf("Unknown Age") != -1
+                  ) {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                  } else {
+                    content +=
+                      '<img id="lazy-img" src="' +
+                      pluginUrl +
+                      '/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                  }
+                  content +=
+                    '<span class="tooltiptext">' +
+                    val.victim_name +
+                    ", " +
+                    val.age_of_death +
+                    ". " +
+                    val.context_of_death +
+                    "</span>" +
+                    "</div>";
+                });
+              }
+              $("#custom-hide").html(content);
+            },
+            "json"
+          );
+        } else {
+          $("#custom-hide").css("opacity", "0");
+          load_items();
+        }
+    });
+    
+    // Search
+    $('#search').keyup(function() {
+        let searchTxt = $(this).val();
+        if(searchTxt.length > 0) {
+            $('#custom-hide').empty();
+            $('.infographics').hide();
+            $('.fem-allname').hide();
+            $('#fem-loader').css('display', 'block');
+
+            $.post( ajax_object.ajax_url, {
+                action:   'search_femicide_data',
+                search: searchTxt,
+                _ajax_nonce: ajax_object.ajax_nonce
+            }, function( response ) {
+                if( response.status == "success" ) {
+                    
+                    $('#fem-loader').css('display', 'none');
+                    $('#custom-hide').show();
+                    current_year = false;
+                    url = pluginUrl + '/case-manager/admin';
+                    content = '';
+                    $.each(response.data, function( index, val ){
+                        
+                        val.victim_name = val.victim_name.trim();
+                        val.story = val.story.replace(/"|“|”/g, '*');
+					    val.story = val.story.replace(/\?s/g, '\'s');
+                        
+                        let date = val.year_of_death.split("-");
+                        let year = date[0];
+                        let source1 = '', source2 = '';
+
+                        if(val.media_source !== '') {
+                            let source = val.media_source.split(",");
+                            source1 = source[0];
+
+                            if(source[1] !== undefined) {
+                                source2 = source[1];
+                            }
+                        }
+                        
+                        if(year != current_year) {
+                            
+                            content += '</div>'+
+                                        '<div id="custom-search">'+
+                                            '<div class="custom-year-category">'+
+                                                '<h2 class="year_background">'+ year +'</h2>'+
+                                            '</div>';
+                            current_year = year;
+                        }
+
+                        content +=   '<div id="res-'+ val.id +'" class="custom-case-display custom-tooltip '+ val.id +'"'+
+                                 'data-img="'+val.victim_img+'"'+
+                                 'data-victim_name="'+val.victim_name+'"'+
+                                 'data-age_of_death="'+val.age_of_death+'"'+
+                                 'data-location="'+val.death_location+'"'+
+                                 'data-year_of_death="'+val.year_of_death+'"'+
+                                 'data-context_of_death="'+val.context_of_death+'"'+
+                                 'data-cause_of_death="'+val.cause_of_death+'"'+
+                                 'data-rel_to_victim="'+val.perpetrator_relationship_to_victim+'"'+
+                                 'data-gender="'+val.perpetrator_gender+'"'+
+                                 'data-charge="'+val.charge+'"'+
+                                 'data-min_sentence="'+val.minimum_sentence+'"'+
+                                 'data-story="'+val.story+'"'+
+                                 'data-source1="'+source1+'"'+
+                                 'data-source2="'+source2+'">';
+                                if((val.age_of_death <= 17) || (val.age_of_death.indexOf('months') != -1) || (val.age_of_death.indexOf('week') != -1) || (val.age_of_death.indexOf('day') != -1) || (val.age_of_death.indexOf('Unknown Age') != -1)){
+                                    content += '<img id="lazy-img" src="'+ pluginUrl +'/case-manager/public/assets/images/Red-Heart_Child.png" alt=""/>';
+                                } else {
+                                    content += '<img id="lazy-img" src="'+ pluginUrl +'/case-manager/public/assets/images/Red-Heart_Adult.png" alt=""/>';
+                                }
+                    content +=      '<span class="tooltiptext">'+ val.victim_name + ", " + val.age_of_death + ". " + val.context_of_death + '</span>'+
+                                '</div>';
+                    });
+                    
+                } 
+                $('#custom-hide').html(content);
+            }, "json"
+            );
+
+        } else {
+            $('#custom-hide').empty();
+            // setTimeout($('.fem-allname').show(), 3000);
+            setTimeout(function(){ $('.fem-allname').fadeIn(); }, 8000);
+            load_items();
+            $('.infographics').show();
+            $('.fem-allname').show();
+        }
+    });
+
+    $('body').click(function(){
+        $('.modal-backdrop').hide();
+    });
+
+
+    // Display infograph at a certain page location
+    $(document).on('scroll', window, function() {
+        
+        let blair = Util.isElementInView($('#res-4968'), true);
+
+        if (blair) {
+            $('.quote-box-4968').fadeIn(1000);
+        } else {
+            $('.quote-box-4968').hide();
+        }
+        
+        let maria = Util.isElementInView($('#res-5822'), true);
+        
+        if (maria) {
+            $('.quote-box-5822').fadeIn(1000);
+        } else {
+            $('.quote-box-5822').hide();
+        }
+
+        let eurydice = Util.isElementInView($('#res-4708'), true);
+        
+        if (eurydice) {
+            $('.quote-box-4708').fadeIn(1000);
+        } else {
+            $('.quote-box-4708').hide();
+        }
+
+        let jennifer = Util.isElementInView($('#res-5555'), true);
+        
+        if (jennifer) {
+            $('.quote-box-5555').fadeIn(1000);
+        } else {
+            $('.quote-box-5555').hide();
+        }
+
+        let nikita = Util.isElementInView($('#res-5453'), true);
+        
+        if (nikita) {
+            $('.quote-box-5453').fadeIn(1000);
+        } else {
+            $('.quote-box-5453').hide();
+        }
+
+        let deborah = Util.isElementInView($('#res-5436'), true);
+        
+        if (deborah) {
+            $('.quote-box-5436').fadeIn(1000);
+        } else {
+            $('.quote-box-5436').hide();
+        }
+
+        let emma = Util.isElementInView($('#res-6287'), true);
+        
+        if (emma) {
+            $('.quote-box-6287').fadeIn(1000);
+        } else {
+            $('.quote-box-6287').hide();
+        }
+
+        let jody = Util.isElementInView($('#res-5484'), true);
+        
+        if (jody) {
+            $('.quote-box-5484').fadeIn(1000);
+        } else {
+            $('.quote-box-5484').hide();
+        }
+
+        let lisa = Util.isElementInView($('#res-6071'), true);
+        
+        if (lisa) {
+            $('.quote-box-6071').fadeIn(1000);
+        } else {
+            $('.quote-box-6071').hide();
+        }
+
+        let preethi = Util.isElementInView($('#res-6026'), true);
+        
+        if (preethi) {
+            $('.quote-box-6026').fadeIn(1000);
+        } else {
+            $('.quote-box-6026').hide();
+        }
+        
+        let anna_marie = Util.isElementInView($('#res-5529'), true);
+        
+        if (anna_marie) {
+            $('.quote-box-5529').fadeIn(1000);
+        } else {
+            $('.quote-box-5529').hide();
+        }
+
+        let carrol_jean_smith = Util.isElementInView($('#res-6220'), true);
+        
+        if (carrol_jean_smith) {
+            $('.quote-box-6220').fadeIn(1000);
+        } else {
+            $('.quote-box-6220').hide();
+        }
+
+        let cody_hutchings = Util.isElementInView($('#res-5201'), true);
+        
+        if (cody_hutchings) {
+            $('.quote-box-5201').fadeIn(1000);
+        } else {
+            $('.quote-box-5201').hide();
+        }
+
+        let dorothy_britton = Util.isElementInView($('#res-4403'), true);
+        
+        if (dorothy_britton) {
+            $('.quote-box-4403').fadeIn(1000);
+        } else {
+            $('.quote-box-4403').hide();
+        }
+
+        let james_dean = Util.isElementInView($('#res-5512'), true);
+        
+        if (james_dean) {
+            $('.quote-box-5512').fadeIn(1000);
+        } else {
+            $('.quote-box-5512').hide();
+        }
+
+        let jennifer_morant = Util.isElementInView($('#res-5555'), true);
+        
+        if (jennifer_morant) {
+            $('.quote-box-5555').fadeIn(1000);
+        } else {
+            $('.quote-box-5555').hide();
+        }
+
+        let jordan_anderson = Util.isElementInView($('#res-6196'), true);
+        
+        if (jordan_anderson) {
+            $('.quote-box-6196').fadeIn(1000);
+        } else {
+            $('.quote-box-6196').hide();
+        }
+
+        let louise_o_brien = Util.isElementInView($('#res-6322'), true);
+        
+        if (louise_o_brien) {
+            $('.quote-box-6322').fadeIn(1000);
+        } else {
+            $('.quote-box-6322').hide();
+        }
+
+        let nadine_haag = Util.isElementInView($('#res-4718'), true);
+        
+        if (nadine_haag) {
+            $('.quote-box-4718').fadeIn(1000);
+        } else {
+            $('.quote-box-4718').hide();
+        }
+
+        let sandra_morales = Util.isElementInView($('#res-4709'), true);
+        
+        if (sandra_morales) {
+            $('.quote-box-4709').fadeIn(1000);
+        } else {
+            $('.quote-box-4709').hide();
+        }
+
+        // let wendy_bell = Util.isElementInView($('#res-4901'), true);
+        
+        // if (wendy_bell) {
+        //     $('.quote-box-4901').fadeIn(1000);
+        // } else {
+        //     $('.quote-box-4901').hide();
+        // }
+
+        let yvonne_powell = Util.isElementInView($('#res-5407'), true);
+        
+        if (yvonne_powell) {
+            $('.quote-box-5407').fadeIn(1000);
+        } else {
+            $('.quote-box-5407').hide();
+        }
+        
+        let gye_william_staples = Util.isElementInView($('#res-5175'), true);
+        
+        if (gye_william_staples) {
+            $('.quote-box-5175').fadeIn(1000);
+        } else {
+            $('.quote-box-5175').hide();
+        }
+
+        let lauren_hickson = Util.isElementInView($('#res-4958'), true);
+        
+        if (lauren_hickson) {
+            $('.quote-box-4958').fadeIn(1000);
+        } else {
+            $('.quote-box-4958').hide();
+        }
+
+        let nancy_kaye_king = Util.isElementInView($('#res-5955'), true);
+        
+        if (nancy_kaye_king) {
+            $('.quote-box-5955').fadeIn(1000);
+        } else {
+            $('.quote-box-5955').hide();
+        }
+
+        let john_ashfield = Util.isElementInView($('#res-5677'), true);
+        
+        if (john_ashfield) {
+            $('.quote-box-5677').fadeIn(1000);
+        } else {
+            $('.quote-box-5677').hide();
+        }
+        
+        let angela_rose_tylor = Util.isElementInView($('#res-5923'), true);
+        
+        if (angela_rose_tylor) {
+            $('.quote-box-5923').fadeIn(1000);
+        } else {
+            $('.quote-box-5923').hide();
+        }
+        
+        let noreen_hannon = Util.isElementInView($('#res-5745'), true);
+        
+        if (noreen_hannon) {
+            $('.quote-box-5745').fadeIn(1000);
+        } else {
+            $('.quote-box-5745').hide();
+        }
+        
+        let peter_stogneff = Util.isElementInView($('#res-6163'), true);
+        
+        if (peter_stogneff) {
+            $('.quote-box-6163').fadeIn(1000);
+        } else {
+            $('.quote-box-6163').hide();
+        }
+        
+        let lina_marciano = Util.isElementInView($('#res-5593'), true);
+        
+        if (lina_marciano) {
+            $('.quote-box-5593').fadeIn(1000);
+        } else {
+            $('.quote-box-5593').hide();
+        }
+        
+        let susan_knight = Util.isElementInView($('#res-4906'), true);
+        
+        if (susan_knight) {
+            $('.quote-box-4906').fadeIn(1000);
+        } else {
+            $('.quote-box-4906').hide();
+        }
+        
+        let joanne_ratcliffe = Util.isElementInView($('#res-4328'), true);
+        
+        if (joanne_ratcliffe) {
+            $('.quote-box-4328').fadeIn(1000);
+        } else {
+            $('.quote-box-4328').hide();
+        }
+        
+        let joan_maree_wech = Util.isElementInView($('#res-4885'), true);
+        
+        if (joan_maree_wech) {
+            $('.quote-box-4885').fadeIn(1000);
+        } else {
+            $('.quote-box-4885').hide();
+        }
+        
+        let christine_sharrock = Util.isElementInView($('#res-6206'), true);
+        
+        if (christine_sharrock) {
+            $('.quote-box-6206').fadeIn(1000);
+        } else {
+            $('.quote-box-6206').hide();
+        }
+        
+        let simon_brook = Util.isElementInView($('#res-5049'), true);
+        
+        if (simon_brook) {
+            $('.quote-box-5049').fadeIn(1000);
+        } else {
+            $('.quote-box-5049').hide();
+        }
+        
+        let irene_kiddle = Util.isElementInView($('#res-6011'), true);
+        
+        if (irene_kiddle) {
+            $('.quote-box-6011').fadeIn(1000);
+        } else {
+            $('.quote-box-6011').hide();
+        }
+        
+        let susan_oyston = Util.isElementInView($('#res-5456'), true);
+        
+        if (susan_oyston) {
+            $('.quote-box-5456').fadeIn(1000);
+        } else {
+            $('.quote-box-5456').hide();
+        }
+        
+        let graeme_thorne = Util.isElementInView($('#res-4526'), true);
+        
+        if (graeme_thorne) {
+            $('.quote-box-4526').fadeIn(1000);
+        } else {
+            $('.quote-box-4526').hide();
+        }
+        
+        let june_algie = Util.isElementInView($('#res-6182'), true);
+        
+        if (june_algie) {
+            $('.quote-box-6182').fadeIn(1000);
+        } else {
+            $('.quote-box-6182').hide();
+        }
+        
+        let gladys_hosking = Util.isElementInView($('#res-5466'), true);
+        
+        if (gladys_hosking) {
+            $('.quote-box-5466').fadeIn(1000);
+        } else {
+            $('.quote-box-5466').hide();
+        }
+        
+        let stella_ivy_farnworth = Util.isElementInView($('#res-4797'), true);
+        
+        if (stella_ivy_farnworth) {
+            $('.quote-box-4797').fadeIn(1000);
+        } else {
+            $('.quote-box-4797').hide();
+        }
+        
+        let marjorie_norval = Util.isElementInView($('#res-4578'), true);
+        
+        if (marjorie_norval) {
+            $('.quote-box-4578').fadeIn(1000);
+        } else {
+            $('.quote-box-4578').hide();
+        }
+        
+        let jean_morris = Util.isElementInView($('#res-4427'), true);
+        
+        if (jean_morris) {
+            $('.quote-box-4427').fadeIn(1000);
+        } else {
+            $('.quote-box-4427').hide();
+        }
+        
+        let alma_tirtschke = Util.isElementInView($('#res-5448'), true);
+        
+        if (alma_tirtschke) {
+            $('.quote-box-5448').fadeIn(1000);
+        } else {
+            $('.quote-box-5448').hide();
+        }
+        
+        let annie_birkett = Util.isElementInView($('#res-5330'), true);
+        
+        if (annie_birkett) {
+            $('.quote-box-5330').fadeIn(1000);
+        } else {
+            $('.quote-box-5330').hide();
+        }
+        
+        let ivy_alexandra_mitchell = Util.isElementInView($('#res-4725'), true);
+        
+        if (ivy_alexandra_mitchell) {
+            $('.quote-box-4725').fadeIn(1000);
+        } else {
+            $('.quote-box-4725').hide();
+        }
+        
+        let emily_mather = Util.isElementInView($('#res-6294'), true);
+        
+        if (emily_mather) {
+            $('.quote-box-6294').fadeIn(1000);
+        } else {
+            $('.quote-box-6294').hide();
+        }
+        
+        let mable_needle = Util.isElementInView($('#res-5873'), true);
+        
+        if (mable_needle) {
+            $('.quote-box-5873').fadeIn(1000);
+        } else {
+            $('.quote-box-5873').hide();
+        }
+        
+        let anna_katherine_krieger = Util.isElementInView($('#res-5698'), true);
+        
+        if (anna_katherine_krieger) {
+            $('.quote-box-5698').fadeIn(1000);
+        } else {
+            $('.quote-box-5698').hide();
+        }
+        
+        let blair_position = $('#res-4968').offset();
+        let maria_position = $('#res-5822').offset();
+        let eurydice_position = $('#res-4708').offset();
+        let nikita_position = $('#res-5453').offset();
+        let jennifer_position = $('#res-5555').offset();
+        let deborah_position = $('#res-5436').offset();
+        let emma_position = $('#res-6287').offset();
+        let jody_position = $('#res-5484').offset();
+        let lisa_position = $('#res-6071').offset();
+        let preethi_position = $('#res-6026').offset();
+        let anna_marie_position = $('#res-5529').offset();
+        let carrol_jean_smith_position = $('#res-6220').offset();
+        let cody_hutchings_position = $('#res-5201').offset();
+        let dorothy_britton_position = $('#res-4403').offset();
+        let james_dean_position = $('#res-5512').offset();
+        let jennifer_morant_position = $('#res-5555').offset();
+        let jordan_anderson_position = $('#res-6196').offset();
+        let louise_o_brien_position = $('#res-6322').offset();
+        let nadine_haag_position = $('#res-4718').offset();
+        let sandra_morales_position = $('#res-4709').offset();
+        // let wendy_bell_position = $('#res-4901').offset();
+        let yvonne_powell_position = $('#res-5407').offset();
+        let gye_william_staples_position = $('#res-5175').offset();
+        let lauren_hickson_position = $('#res-4958').offset();
+        let nancy_kaye_king_position = $('#res-5955').offset();
+        let john_ashfield_position = $('#res-5677').offset();
+        let angela_rose_tylor_position = $('#res-5923').offset();
+        let noreen_hannon_position = $('#res-5745').offset();
+        let peter_stogneff_position = $('#res-6163').offset();
+        let lina_marciano_position = $('#res-5593').offset();
+        let susan_knight_position = $('#res-4906').offset();
+        let joanne_ratcliffe_position = $('#res-4328').offset();
+        let joan_maree_wech_position = $('#res-4885').offset();
+        let christine_sharrock_position = $('#res-6206').offset();
+        let simon_brook_position = $('#res-5049').offset();
+        let irene_kiddle_position = $('#res-6011').offset();
+        let susan_oyston_position = $('#res-5456').offset();
+        let graeme_thorne_position = $('#res-4526').offset();
+        let june_algie_position = $('#res-6182').offset();
+        let gladys_hosking_position = $('#res-5466').offset();
+        let stella_ivy_farnworth_position = $('#res-4797').offset();
+        let marjorie_norval_position = $('#res-4578').offset();
+        let jean_morris_position = $('#res-4427').offset();
+        let alma_tirtschke_position = $('#res-5448').offset();
+        let annie_birkett_position = $('#res-5330').offset();
+        let ivy_alexandra_mitchell_position = $('#res-4725').offset();
+        let emily_mather_position = $('#res-6294').offset();
+        let mable_needle_position = $('#res-5873').offset();
+        let anna_katherine_krieger_position = $('#res-5698').offset();
+        
+        $('.quote-box-4968').offset({ top:blair_position.top });
+        $('.quote-box-5822').offset({ top:maria_position.top });
+        $('.quote-box-4708').offset({ top:eurydice_position.top });
+        $('.quote-box-5453').offset({ top:nikita_position.top });
+        $('.quote-box-5555').offset({ top:jennifer_position.top });
+        $('.quote-box-5436').offset({ top:deborah_position.top });
+        $('.quote-box-6287').offset({ top:emma_position.top });
+        $('.quote-box-5484').offset({ top:jody_position.top });
+        $('.quote-box-6071').offset({ top:lisa_position.top });
+        $('.quote-box-6026').offset({ top:preethi_position.top });
+        $('.quote-box-5529').offset({ top:anna_marie_position.top });
+        $('.quote-box-6220').offset({ top:carrol_jean_smith_position.top });
+        $('.quote-box-5201').offset({ top:cody_hutchings_position.top });
+        $('.quote-box-4403').offset({ top:dorothy_britton_position.top });
+        $('.quote-box-5512').offset({ top:james_dean_position.top });
+        $('.quote-box-5555').offset({ top:jennifer_morant_position.top });
+        $('.quote-box-6196').offset({ top:jordan_anderson_position.top });
+        $('.quote-box-6322').offset({ top:louise_o_brien_position.top });
+        $('.quote-box-4718').offset({ top:nadine_haag_position.top });
+        $('.quote-box-4709').offset({ top:sandra_morales_position.top });
+        // $('.quote-box-4901').offset({ top:wendy_bell_position.top });
+        $('.quote-box-5407').offset({ top:yvonne_powell_position.top });
+        $('.quote-box-5175').offset({ top:gye_william_staples_position.top });
+        $('.quote-box-4958').offset({ top:lauren_hickson_position.top });
+        $('.quote-box-5955').offset({ top:nancy_kaye_king_position.top });
+        $('.quote-box-5677').offset({ top:john_ashfield_position.top });
+        $('.quote-box-5923').offset({ top:angela_rose_tylor_position.top });
+        $('.quote-box-5745').offset({ top:noreen_hannon_position.top });
+        $('.quote-box-6163').offset({ top:peter_stogneff_position.top });
+        $('.quote-box-5593').offset({ top:lina_marciano_position.top });
+        $('.quote-box-4906').offset({ top:susan_knight_position.top });
+        $('.quote-box-4328').offset({ top:joanne_ratcliffe_position.top });
+        $('.quote-box-4885').offset({ top:joan_maree_wech_position.top });
+        $('.quote-box-6206').offset({ top:christine_sharrock_position.top });
+        $('.quote-box-5049').offset({ top:simon_brook_position.top });
+        $('.quote-box-6011').offset({ top:irene_kiddle_position.top });
+        $('.quote-box-5456').offset({ top:susan_oyston_position.top });
+        $('.quote-box-4526').offset({ top:graeme_thorne_position.top });
+        $('.quote-box-6182').offset({ top:june_algie_position.top });
+        $('.quote-box-5466').offset({ top:gladys_hosking_position.top });
+        $('.quote-box-4797').offset({ top:stella_ivy_farnworth_position.top });
+        $('.quote-box-4578').offset({ top:marjorie_norval_position.top });
+        $('.quote-box-4427').offset({ top:jean_morris_position.top });
+        $('.quote-box-5448').offset({ top:alma_tirtschke_position.top });
+        $('.quote-box-5330').offset({ top:annie_birkett_position.top });
+        $('.quote-box-4725').offset({ top:ivy_alexandra_mitchell_position.top });
+        $('.quote-box-6294').offset({ top:emily_mather_position.top });
+        $('.quote-box-5873').offset({ top:mable_needle_position.top });
+        $('.quote-box-5698').offset({ top:anna_katherine_krieger_position.top });
+    });
+    
+    function playname() {
+        var count = 0; 
+        var maxDelay = 3500;
+        var minSpeed = 3500;
+        var maxSpeed = 3000;
+        var fadeTo = 1;
+        let ws1 = $(this).scrollTop();
+        
+        // if(ws1 >= 600) {
+            $('.fem-allname span').each(function(){
+                var delay = Math.ceil(Math.random() * maxDelay);
+                var speed = maxSpeed + Math.ceil(Math.random() * (minSpeed - maxSpeed));
+                count++;
+                $(this).delay(delay).fadeTo(speed, fadeTo, function(){
+                    count = 0;
+                    $('.fem-allname span').css('opacity', 0);
+                });
+            });
+        // }
+    }
+    
+    // Modal view depends on the heart clicked
+    $(document).on('click', '.custom-case-display', function(){
+        
+        let img = $(this).data('img');
+        let name = $(this).data('victim_name');
+        let age = $(this).data('age_of_death');
+        let location = $(this).data('location');
+        let year_of_death = $(this).data('year_of_death');
+        let context = $(this).data('context_of_death');
+        let cause = $(this).data('cause_of_death');
+        let rel_to_victim = $(this).data('rel_to_victim');
+        let gender = $(this).data('gender');
+		let charge = $(this).data('charge');
+        let story = $(this).data('story').replace(/\*/g, '"');
+        let source1, source2, min_sentence;
+        story = story.replace(/\+/g, '\'');
+        
+        if($(this).data('min_sentence') != '') {
+            min_sentence = $(this).data('min_sentence');
+        } else {
+            min_sentence = 'Unknown';
+        }
+        
+        if(($(this).data('source1') == undefined) || ($(this).data('source1') == '')) {
+            source1 = '';
+        } else{
+            source1 = $(this).data('source1');
+        }
+
+        if(($(this).data('source2') == undefined) || ($(this).data('source2') == '')) {
+            source2 = '';
+        } else{
+            source2 = $(this).data('source2');
+        }
+
+        if(img != "") { 
+            victim_img = img;
+        } else {
+            if((age <= 17) || (age.toString().search('months') != -1) || (age.toString().search('weeks') != -1) || (age.toString().search('days') != -1) || (age.toString().search('Unknown Age') != -1))  {
+                victim_img = "red_heart_child.jpg";
+            }
+            else {
+                victim_img = "red_heart_woman.jpg";
+            }
+        }
+
+        let modal_data =    '<div class="modal-content">'+
+                                '<div class="modal-header modal-search">'+
+                                    '<h3 class="modal-title fem-color-red">'+
+                                        '<span class="custom-modal-name font-weight-bold">' + name + ', ' + age + '</span>; ' + location +
+                                    '</h3>'+
+                                    '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'+
+                                        '<span aria-hidden="true">&times;</span>'+
+                                    '</button>'+
+                                '</div>'+
+                                '<div class="modal-body">'+
+                                    '<div class="custom-modal-body">'+
+                                        '<div class="row">'+
+                                            '<div class="col-md-4 custom-modal-img">'+
+                                                '<div class="modal-img-bd">'+
+                                                    '<img src="' + url + '/uploads/' + victim_img + '" alt=""/>'+
+                                                '</div>'+
+                                            '</div>'+
+                                            '<div class="col-md-4 custom-modal-desc modal-search">'+
+                                                '<div class="mb-1">'+
+                                                    '<small>YEAR</small> <br><b>'+ year_of_death + '</b><br>'+
+                                                '</div>'+
+                                                '<div class="mb-1">'+ 
+                                                    '<small>CONTEXT</small> <br><b>' + context + '</b><br>'+
+                                                '</div>'+
+                                                '<small>CAUSE OF DEATH</small> <br><b>' + cause + '</b>'+
+                                                '<div class="mb-1">'+ 
+                                                    '<small>CHARGE</small> <br><b>' + charge + '</b><br>'+
+                                                '</div>'+			
+                                            '</div>'+
+                                            '<div class="col-md-4">'+
+                                            '<div class="mb-1">'+ 
+                                                '<small>ACCUSED RELATIONSHIP</small> <br><b>' + rel_to_victim + '</b><br>'+
+                                            '</div>'+
+                                            '<div class="mb-1">'+ 
+                                                '<small>ACCUSED GENDER</small> <br><b>' + gender + '</b><br>'+
+                                            '</div>'+
+                                            '<div class="mb-1">'+ 
+                                                '<small>CASE OUTCOME</small> <br><b>' + min_sentence + '</b><br>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="custom-clearfix modal-search">'+
+                                        '<p>' + story + '</p>'+
+                                    '</div>'+
+                                    '<div class="custom-clearfix modal-search">'+
+                                        '<p><a href="' + source1 + '" target="_blank">'+ source1 +'</a></p>'+
+                                        '<p><a href="' + source2 + '" target="_blank">'+ source2 +'</a></p>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>';
+
+        $('#fem-modal-data').html(modal_data);
+        $('#modal-display').modal('toggle');
+    });
+    
+    $("#modal-display").on("shown.bs.modal", function () {
+        if (window.matchMedia("(max-width: 869px)").matches) {
+            $("html").css("overflow-y", "hidden");
+        }
+    });
+    
+    $("#modal-display").on("hidden.bs.modal", function () {
+        if (window.matchMedia("(max-width: 869px)").matches) {
+            $("html").css("overflow-y", "auto");
+        }
+    });
+    
+     // Checks if an element is on viewport
+    function Utils() {}
+
+    Utils.prototype = {
+        constructor: Utils,
+        isElementInView: function (element, fullyInView) {
+            var pageTop = $(window).scrollTop();
+            var pageBottom = pageTop + $(window).height();
+            var elementTop = $(element).offset().top;
+            var elementBottom = elementTop + $(element).height();
+
+            if (fullyInView === true) {
+                return ((pageTop < elementTop) && (pageBottom > elementBottom));
+            } else {
+                return ((elementTop <= pageBottom) && (elementBottom >= pageTop));
+            }
+        }
+    };
+
+    let Util = new Utils();
+});

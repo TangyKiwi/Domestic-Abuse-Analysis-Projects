@@ -1,0 +1,741 @@
+.nav {
+  display: block;
+}
+
+/*COLORS*/
+.fem-color-orange {
+  color: #c9712a !important;
+}
+
+.fem-color-gray {
+  color: #bdbdbd !important;
+}
+
+.fem-color-red {
+  color: #cb363f !important;
+}
+
+.custom-case-display img {
+  width: 45px;
+  cursor: pointer;
+}
+
+.custom-clearfix {
+  clear: both;
+}
+
+.custom-modal-img img {
+  width: auto;
+  height: 250px;
+}
+
+.custom-modal-name {
+  font-weight: 700;
+}
+
+/*.custom-modal-desc {
+	float: left;
+	margin-left: 15px;
+}*/
+
+#custom-header img {
+  width: 100%;
+}
+
+.custom-case-display {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+#custom-header {
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
+    url("../images/default-banner.jpg");
+  /* Set a specific height */
+  width: 100%;
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-header-content h1 {
+  text-shadow: 2px 2px #2b3e50;
+  font-weight: 900;
+  text-align: start;
+}
+
+.custom-header-content h5 {
+  text-align: start;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.custom-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /*Position the tooltip*/
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 21px;
+  max-height: 48px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+#main #search {
+  margin: auto;
+  margin-top: 25px;
+}
+
+#custom-search {
+  clear: both;
+  margin-left: 10px;
+}
+
+/*Custom Modal*/
+.modal {
+  top: 170px;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.year_background {
+  background-image: url("../images/year_background.png");
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  color: #fff;
+  padding: 35px;
+  font-weight: 600;
+  font-style: italic;
+  background-repeat: no-repeat;
+}
+
+.custom-year-category {
+  margin-bottom: 15px;
+}
+
+.modal.show .modal-dialog {
+  min-width: 800px;
+}
+
+/*.custom-modal-body .custom-modal-img {
+    border-right: 1px solid #ddd;
+}*/
+.modal-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #cb363f;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #ab2a32;
+}
+
+.custom-modal-body .custom-modal-desc {
+  border-right: 1px solid #ddd;
+}
+
+/*.custom-modal-desc.modal-search {
+	margin: 20px;
+}*/
+
+.custom-modal-desc * {
+  font-size: 16px;
+}
+
+.custom-modal-desc-right * {
+  font-size: 16px;
+}
+
+.custom-clearfix.modal-search {
+  border-top: 1px solid #ddd;
+  padding: 20px;
+}
+
+.custom-clearfix.modal-search p {
+  font-size: 15px;
+}
+
+#custom-hide {
+  float: left;
+  width: 60%;
+  z-index: 1;
+  position: relative;
+}
+
+/*Infographics*/
+.infographics {
+  float: right;
+  width: 40%;
+  margin-top: 70px;
+}
+
+.quote-box {
+  width: 100%;
+  margin-left: 1%;
+  margin-top: 10px;
+  float: left;
+  background-color: #333;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  display: none;
+}
+
+.quote-image-container {
+  max-width: 135px;
+  float: left;
+  height: 100%;
+  position: relative;
+  margin-right: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quote-image-container img {
+  max-width: 135px;
+  height: 131px;
+}
+
+.quote-box .quote-name {
+  font-size: 20px;
+}
+
+.quote-box .quote-date {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.quote-box .quote-text {
+  margin-top: 0.5em;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+/*SVG*/
+.svg-first,
+.svg-second {
+  display: none;
+}
+
+svg path {
+  stroke: #d78f66;
+}
+
+.svg-position {
+  position: relative;
+  z-index: 0;
+  right: 575px;
+  top: -427px;
+}
+
+/*Table graph*/
+.femicide-category-list {
+  border: 1px solid #333;
+  height: 408px;
+}
+.femicide-category-list * {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.femicide-category-title {
+  padding: 3px;
+}
+.femicide-category-row {
+  border-top: 1px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.femicide-category-col-context {
+  width: 225px;
+}
+
+.femicide-category-col-territory {
+  width: 200px;
+}
+
+.femicide-category-col-death {
+  width: 302px;
+}
+
+.femicide-category-col-90 {
+  width: 90%;
+}
+
+.femicide-category-col-10 {
+  width: 10%;
+  text-align: right;
+}
+
+/*Filter by*/
+.fem-db-filter h3 {
+  font-weight: 600;
+}
+
+.fem-db-filter-title {
+  padding-right: inherit;
+  padding-top: 5px;
+}
+
+.fem-filter {
+  height: 50px;
+  display: inline-block;
+  background-color: #333;
+  z-index: 0;
+  position: relative;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.fem-filter-label {
+  width: 100%;
+  padding-right: 30px;
+  color: #bdbdbd;
+}
+
+.fem-filter select {
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  -webkit-appearance: menulist-button;
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 0;
+  color: #333;
+}
+
+.fem-filter .fem-filter-label .selection-name {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Key*/
+.fem-key {
+  color: #fff;
+  font-weight: 600;
+}
+
+/*Backdrop*/
+.modal-backdrop {
+  z-index: 0;
+}
+
+/*Tablegraph*/
+.femicide-tablegraph * {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.femicide-tablegraph th {
+  color: #bdbdbd !important;
+}
+
+.femicide-tablegraph span {
+  color: #fff;
+}
+
+.femicide-tablegraph,
+.femicide-tablegraph td,
+.femicide-tablegraph th {
+  border: 1px solid #333;
+}
+
+.femicide-tablegraph th,
+.femicide-tablegraph td {
+  padding: 4px 4px !important;
+}
+
+.fem-year-filter {
+  color: #fff;
+  font-size: 17px;
+  margin-right: 5px;
+  padding: 8px;
+}
+
+.fem-cause-filter {
+  color: #fff;
+  font-size: 17px;
+  margin-right: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+#fem-filter-year {
+  background-color: #333;
+  color: #fff;
+  height: 40px;
+  border-radius: 0;
+  border: #333;
+  margin-right: 10px;
+}
+
+.fem-db-filter-title {
+  padding: 19px 0;
+}
+
+.rating-filter {
+  height: 50px;
+  display: inline-block;
+  background-color: #333;
+  z-index: 10;
+  font-family: "Guardian Text Sans Web", "Agate Sans", sans-serif;
+  position: relative;
+  margin: 10px 10px 10px 0;
+  padding: 12px 10px;
+  box-sizing: border-box;
+}
+
+.filter-label {
+  width: 100%;
+  color: #bdbdbd;
+  font-size: 15px;
+  padding-right: 30px;
+}
+
+.selection-name-year,
+.selection-name-cause,
+.selection-name-context,
+.selection-name-perp,
+.selection-name-outcome{
+  color: #fff;
+  font-weight: bold;
+}
+
+.rating-filter select {
+  z-index: 90;
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  -webkit-appearance: menulist-button;
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 0;
+  color: #333;
+}
+
+.rating-filter select option {
+  font-size: 18px;
+}
+
+.rating-filter .filter-label:after {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 24px;
+  height: 50px;
+  content: "";
+  background: url(https://interactive.guim.co.uk/atoms/2018/08/deaths_in_custody/v/1566881065349/assets/arrow-down.svg)
+    no-repeat center;
+}
+
+#fem-map-table .et_pb_column_2 {
+  margin-right: 10px;
+}
+
+#fem-map-table .et_pb_column_3 {
+  width: 41%;
+}
+
+/*Heart Info Image*/
+.quote-box-info {
+  position: absolute;
+  top: 65px;
+  right: -81px;
+  color: #fff;
+  width: 60%;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.quote-box .quote-text {
+  margin-top: 0.5em;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+
+.quote-box-169 .quote-box-info {
+  right: -94px;
+  top: 78px;
+}
+
+.infographics img {
+  max-width: 110%;
+}
+
+.fem-allname {
+  position: sticky;
+  top: 20%;
+  height: 1200px;
+  overflow: hidden;
+}
+
+.fem-allname span {
+  opacity: 0;
+}
+
+/*Width by percentage*/
+.w-45 {
+  width: 45%;
+}
+
+/*Fonts px*/
+.f-18 {
+  font-size: 18px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+/*FONTS*/
+@font-face {
+  font-family: femName;
+  src: url(../fonts/BeVietnam-Regular.ttf);
+}
+
+.fem-allname span {
+  font-family: femName;
+  font-size: 18px;
+  line-height: 2rem;
+  margin-right: 5px;
+}
+
+.fem-db-filter .row .col-md-8 {
+  z-index: 0;
+}
+
+/*COLUMN GRAPH*/
+#q-graph {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 200px;
+  margin: 1.1em 0 0;
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+  border: 1px solid #333;
+}
+
+#q-graph caption {
+  caption-side: top;
+  width: 600px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+  padding-left: 0.75rem;
+  color: #bdbdbd;
+}
+
+#q-graph tr,
+#q-graph th,
+#q-graph td {
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph td {
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: 0.9;
+    color: white;
+  }
+}
+
+#q-graph tbody {
+  left: 32px;
+  position: absolute;
+  bottom: 0;
+}
+
+#q-graph thead tr {
+  left: 100%;
+  top: 50%;
+  bottom: auto;
+  margin: -2.5em 0 0 5em;
+}
+#q-graph thead th {
+  width: 7.5em;
+  height: auto;
+  padding: 0.5em 1em;
+}
+#q-graph thead th.paid {
+  top: 2.75em;
+  line-height: 2;
+  left: 0;
+}
+
+#q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  /*border-right: 1px dotted #C4C4C4; */
+  color: #aaa;
+}
+#q-graph #q1 {
+  left: 10px;
+}
+#q-graph #q2 {
+  left: 55px;
+}
+#q-graph #q3 {
+  left: 100px;
+}
+#q-graph #q4 {
+  left: 145px;
+}
+#q-graph #q5 {
+  left: 190px;
+}
+#q-graph #q6 {
+  left: 235px;
+}
+#q-graph #q7 {
+  left: 280px;
+}
+#q-graph #q8 {
+  left: 325px;
+}
+#q-graph #q9 {
+  left: 370px;
+}
+#q-graph #q10 {
+  left: 415px;
+}
+#q-graph #q11 {
+  left: 460px;
+}
+#q-graph #q12 {
+  left: 505px;
+}
+#q-graph #q13 {
+  left: 550px;
+}
+#q-graph #q14 {
+  left: 595px;
+}
+#q-graph #q15 {
+  left: 640px;
+}
+#q-graph #q16 {
+  left: 685px;
+}
+#q-graph #q17 {
+  left: 730px;
+}
+#q-graph #q18 {
+  left: 775px;
+}
+#q-graph #q19 {
+  left: 820px;
+}
+#q-graph #q20 {
+  left: 865px;
+}
+#q-graph tbody th {
+  bottom: -1.75em;
+  vertical-align: top;
+  font-weight: normal;
+  color: #fff;
+}
+#q-graph .bar {
+  width: 40px;
+  border: 1px solid;
+  border-bottom: none;
+  color: #fff;
+}
+#q-graph .bar p {
+  padding: 0;
+}
+#q-graph .paid {
+  background-color: #a31a1c;
+  border-color: transparent;
+}
+
+#ticks {
+  position: relative;
+  top: -300px;
+  left: 2px;
+  width: 596px;
+  height: 300px;
+  z-index: 1;
+  margin-bottom: -300px;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+}
+
+#ticks .tick {
+  position: relative;
+  width: 600px;
+}
+
+#ticks .tick p {
+  position: absolute;
+  left: -5em;
+  top: -0.8em;
+  margin: 0 0 0 0.5em;
+}
+
+.quote-box-4968 {
+  display: none;
+}
+
+.quote-box-5822 {
+  display: none;
+}
+
+#q-graph {
+  margin-bottom: 30px;
+}
+
+.modal-img-bd {
+  border: 2px solid #cb363f;
+  background-color: #ddd;
+  text-align: center;
+}
+
+#fem-loader {
+  display: none;
+  margin: auto;
+}
