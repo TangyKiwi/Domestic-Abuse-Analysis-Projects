@@ -58,7 +58,7 @@ for id in ids:
     print(data_row)
     df = df.append(data_row, ignore_index=True)
 
-filepath = Path("../redheart_data.csv")
+filepath = Path("../Data/redheart_data.csv")
 filepath.parent.mkdir(parents=True, exist_ok=True)
 df.to_csv(filepath, index=False)
 

@@ -4,7 +4,7 @@ import requests
 from wordcloud import WordCloud, STOPWORDS
 import pandas as pd
 
-df = pd.read_csv("https://raw.githubusercontent.com/TangyKiwi/Worldie/master/RedHeart/redheart_data_cleaned.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/TangyKiwi/Worldie/master/RedHeart/Data/redheart_data_cleaned.csv")
 source1 = df["source1"]
 source2 = df["source2"]
 
