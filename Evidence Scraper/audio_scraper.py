@@ -39,6 +39,7 @@ sr_audio("Audio/farrow_weinstein2.wav", "farrow_weinstein2")
 # pydub to manipulate audio files
 # https://github.com/jiaaro/pydub
 from pydub import AudioSegment
+import os # for file cleanup
 import speech_recognition as sr
 r = sr.Recognizer()
 
@@ -56,6 +57,10 @@ def split_audio(file, name):
                 f.write(r.recognize_google(audio) + " ")
 
         i += 1
+
+    # to remove all chunks
+    for i in range(i - 1, -1, -1):
+        os.remove("Audio/" + name + "_chunk{0}.wav".format(i))
 
 
 split_audio("Audio/nypd_weinstein.wav", "nypd_weinstein")
