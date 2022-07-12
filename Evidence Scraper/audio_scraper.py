@@ -11,7 +11,7 @@ def wav2vec_audio(file, name):
     input_values = tokenizer(audio, return_tensors="pt").input_values
     logits = model(input_values).logits
     prediction = torch.argmax(logits, dim=-1)
-    with open("Data/w2v_" + name + ".txt", "w") as f:
+    with open("Data/Weinstein/w2v_" + name + ".txt", "a") as f:
         f.write(tokenizer.batch_decode(prediction)[0])
 
 
@@ -28,7 +28,7 @@ r = sr.Recognizer()
 def sr_audio(file, name):
     with sr.AudioFile(file) as source:
         audio = r.record(source)
-        with open("Data/sr_" + name + ".txt", "w") as f:
+        with open("Data/Weinstein/sr_" + name + ".txt", "a") as f:
             f.write(r.recognize_google(audio))
 
 
@@ -44,7 +44,7 @@ import speech_recognition as sr
 r = sr.Recognizer()
 
 
-def split_audio(file, name):
+def sr_split_audio(file, name):
     audio = AudioSegment.from_file(file, format="wav")
     splices = audio[::30000] # 30 second splices
     i = 0
@@ -53,7 +53,7 @@ def split_audio(file, name):
         splice.export(file, bitrate ='192k', format ="wav")
         with sr.AudioFile(file) as source:
             audio = r.record(source)
-            with open("Data/sr_" + name + ".txt", "a") as f:
+            with open("Data/Weinstein/sr_" + name + ".txt", "a") as f:
                 f.write(r.recognize_google(audio) + " ")
 
         i += 1
@@ -63,4 +63,30 @@ def split_audio(file, name):
         os.remove("Audio/" + name + "_chunk{0}.wav".format(i))
 
 
-split_audio("Audio/nypd_weinstein.wav", "nypd_weinstein")
+sr_split_audio("Audio/nypd_weinstein.wav", "nypd_weinstein")
+
+
+from pydub import AudioSegment
+import os
+
+
+def w2v_split_audio(file, name):
+    audio = AudioSegment.from_file(file, format="wav")
+    splices = audio[::30000]
+    i = 0
+    for splice in splices:
+        file = "Audio/" + name + "_chunk{0}.wav".format(i)
+        splice.export(file, bitrate ='192k', format ="wav")
+        audio, rate = librosa.load(file, sr = 16000)
+        input_values = tokenizer(audio, return_tensors="pt").input_values
+        logits = model(input_values).logits
+        prediction = torch.argmax(logits, dim=-1)
+        with open("Data/Weinstein/w2v_" + name + ".txt", "a") as f:
+            f.write(tokenizer.batch_decode(prediction)[0])
+        i += 1
+
+    for i in range(i - 1, -1, -1):
+        os.remove("Audio/" + name + "_chunk{0}.wav".format(i))
+
+
+w2v_split_audio("Audio/nypd_weinstein.wav", "nypd_weinstein")
