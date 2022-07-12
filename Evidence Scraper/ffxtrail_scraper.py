@@ -38,7 +38,7 @@ def scrape_evidence(name, dates, url):
                 # open(output_file, "wb").write(requests.get(link).content)
                 # print("Downloaded: " + date + " " + output_file.name)
 
-    filepath = Path("Data/" + name + ".csv")
+    filepath = Path("Data/Depp & Heard" + name + ".csv")
     filepath.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(filepath, index=False)
 
