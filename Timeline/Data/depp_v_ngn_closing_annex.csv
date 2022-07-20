@@ -1,0 +1,352 @@
+label,text,id,surrounding_text
+DATE,early 2013,,"Incident 1: The Tattoo Incident, early 2013   "
+DATE,DAY 11,,"when she was first allegedly hit, when she was cross-examined on DAY 11 (she was “kind of "
+DATE,DAY 2,,"DAY 2, P.177 (Cross-examination of Mr Depp) "
+DATE,DAY 4,,DAY 4 (Re-examination of Mr Depp) 
+timexy,"March 
+
+    25","TIMEX3 type=""DATE"" value=""2025-03-01T00:00:00""",
+DATE,at least,,     2          seeing Ms. Heard for at least 18 months? 
+timexy,18 months,"TIMEX3 type=""DURATION"" value=""P18M""",     2          seeing Ms. Heard for at least 18 months? 
+DATE,the beginning of 2013,,"    12          forever"", was it the beginning of 2013? "
+DATE,about 1993,,"    13      A.  No, sir.  The tattoo was altered in about 1993. "
+timexy,18 months,"TIMEX3 type=""DURATION"" value=""P18M""","    16      Q.  So, throughout your relationship in the 18 months or so before "
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",    20      Q.  Was March 2013 the first time Ms. Heard had ever seen your 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",    20      Q.  Was March 2013 the first time Ms. Heard had ever seen your 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","Incident 2: The Painting Incident/ Keith Richards Incident, March 2013   "
+DATE,The day,,"    20      MS. WASS:  The day after the night of the painting, you were due "
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",18      Q.  And there was a date in March 2013 when you were extremely 
+DATE,a day,,    15      A.  Waiting for me?  It was a day where it was not an interview 
+DATE,a day,,    15      A.  Waiting for me?  It was a day where it was not an interview 
+DATE,DAY 4,,DAY 4 (Re-examination of Mr Depp)  
+DATE,"the middle of 
+    24",,
+DATE,"the next 
+    23          morning of the day",,
+timexy,ten days,"TIMEX3 type=""DURATION"" value=""P10D""","    12          stayed with him for, I believe it was ten days, two weeks.  On "
+timexy,two weeks,"TIMEX3 type=""DURATION"" value=""P2W""","    12          stayed with him for, I believe it was ten days, two weeks.  On "
+DATE,that day,,"    22          night or in the early hours of the morning of that day, the "
+DATE,DAY 11,,DAY 11 (Cross-examination of Amber Heard) 
+DATE,20th March,,     4          seeing you.  That was on 20th March.  Is this you in the 
+DATE,23rd March,,    16          with 23rd March? 
+DATE,22nd March,,    17      MR. JUSTICE NICOL:  22nd March. 
+DATE,the 22nd,,    24      A.  The painting incident took place on the 22nd. 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",    25      MR. JUSTICE NICOL:  22nd March 2013? 
+DATE,all day,,"    15          had not showed up all day."" "
+DATE,those days,,     3      A.  Johnny back in those days had not gotten to the point of 
+DATE,the 8th,,    23          were not at Orange.  It happened on the 8th.  That is what 
+timexy,23 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-23T00:00:00""","McLagan taken on 23 March 2013, but once again Ms Heard sought to cover herself by "
+DATE,23rd March,,"    18      Q.  This was taken on 23rd March, and I will come to why in a "
+DATE,the day,,    19          moment.  This was taken the day after the assault ---- 
+DATE,a year,,    19      Q.  This is a year after your sister has claimed Mr. Depp did that 
+DATE,February 11th 2014,,    22          February 11th 2014. 
+DATE,almost a year,,"    23      MS. LAWS:  It is almost a year, it is 11 months later.  But it is "
+timexy,11 months,"TIMEX3 type=""DURATION"" value=""P11M""","    23      MS. LAWS:  It is almost a year, it is 11 months later.  But it is "
+DATE,DAY 13,,DAY 13 (Re-examination of Ms Heard)  
+DATE,The 22nd,,     7      A.  The 22nd. 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",    17      Q.  Was that the only date in March 2013 when there was filming 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",    17      Q.  Was that the only date in March 2013 when there was filming 
+DATE,DAY 13,,DAY 13 (Cross-examination of Whitney Henriques) 
+DATE,The 6th July,,     8      MS. LAWS:  The 6th July was the day before the trial starts.  Were 
+DATE,that day,,     9          you aware that she corrected her statement on that day?  Or 
+DATE,day one,,"    18          before the start of this trial, or on day one of the trial, "
+DATE,the day,,"    14      Q.  I think you have indicated that on the day of this assault, "
+DATE,a year later,,    22          happened a year later? 
+DATE,the end of last,,"    15      Q.  Paragraph 37.  So what you were saying, at the end of last "
+DATE,16          year,,"    16          year, was that you did not look at it closely, Amber told you "
+DATE,DAY 14,,DAY 14 (Re-examination of Whitney Henriques) 
+timexy,June 2013,"TIMEX3 type=""DATE"" value=""2013-06-01T00:00:00""","Incident 3: Hicksville, June 2013  "
+DATE,the next day,,"    24      Q.  The trailer was very, very badly damaged the next day. There "
+DATE,DAY 13,,DAY 13 (Cross-examination of Kristina Sexton)  
+DATE,the summer of 2013,,     5          which we know was in the summer of 2013. 
+timexy,two years,"TIMEX3 type=""DURATION"" value=""P2Y""",    22      Q.  I understand that.  But that conversation was two years 
+DATE,17          25th,,    17          25th May 2014 at 11.32 p.m; all right? 
+timexy,May 2014,"TIMEX3 type=""DATE"" value=""2014-05-01T00:00:00""",    17          25th May 2014 at 11.32 p.m; all right? 
+timexy,2 June 2016,"TIMEX3 type=""DATE"" value=""2016-06-02T00:00:00""",The cross-examination of Stephen Deuters on a newspaper article of 2 June 2016 did not give 
+DATE,12          2nd,,    12          2nd June 2016? 
+timexy,June 2016,"TIMEX3 type=""DATE"" value=""2016-06-01T00:00:00""",The cross-examination of Stephen Deuters on a newspaper article of 2 June 2016 did not give 
+DATE,the day,,    11      A.  Probably the day it came out.  It was very distressing. 
+DATE,8          ago,,"     8          ago now, I cannot remember my exact thinking, but yes, looking "
+timexy,May 2014,"TIMEX3 type=""DATE"" value=""2014-05-01T00:00:00""",Ms James saw Ms Heard in the immediate aftermath of the plane journey in May 2014  
+DATE,all day,,     3          basically had a pool party all day. 
+timexy,August 2014,"TIMEX3 type=""DATE"" value=""2014-08-01T00:00:00""","Incident 5: Bahamas Detox, August 2014 "
+DATE,DAY 3,,DAY 3 (Cross Examination of Mr Depp)  
+DATE,14          17th August,,    14          17th August when the detox was so difficult that you started 
+DATE,19th August,,"    16                Over the page at page 41, the top text on 19th August, "
+DATE,"The following month,",,"The following month, September 2014, Mr Depp and Ms Heard were clearly going through a "
+timexy,September 2014,"TIMEX3 type=""DATE"" value=""2014-09-01T00:00:00""","The following month, September 2014, Mr Depp and Ms Heard were clearly going through a "
+DATE,"22nd 
+     6          September",,
+timexy,August 2014,"TIMEX3 type=""DATE"" value=""2014-08-01T00:00:00""","     7      Q.  If you look there, that is still 6th August 2014, and it is "
+DATE,DAY 12,,DAY 12 (Cross-examination of Amber Heard) 
+DATE,17th August,,"    21          which we will come on to, but this is 17th August.  This "
+DATE,17th August,,"    21          which we will come on to, but this is 17th August.  This "
+DATE,17th August,,"    21          which we will come on to, but this is 17th August.  This "
+DATE,that day,,    22          did not assault you in any way on that day? 
+DATE,17th August,,     3      Q.  On 17th August? 
+DATE,August 17th,,"20      MS. LAWS:  Yes.  I will read it out: ""On August 17th, while in the "
+timexy,January 2015,"TIMEX3 type=""DATE"" value=""2015-01-01T00:00:00""","Incident 7: Tokyo Hotel Room, January 2015 "
+timexy,January 2015,"TIMEX3 type=""DATE"" value=""2015-01-01T00:00:00""",17      Q.  That is in January 2015.  You explained that you were on a 
+DATE,this month,,"    12          comparison to how this month has panned out."" "
+timexy,January 2015,"TIMEX3 type=""DATE"" value=""2015-01-01T00:00:00""","    19          please, this is an allegation you make dated January 2015, "
+timexy,Two days,"TIMEX3 type=""DURATION"" value=""P2D""",     5      A.  Two days after.  I remember being concerned about any visible 
+timexy,two days,"TIMEX3 type=""DURATION"" value=""P2D""",     8      MS. LAWS:  So the premier was two days after this assault? 
+timexy,March 2015,"TIMEX3 type=""DATE"" value=""2015-03-01T00:00:00""","Incident 8: Australia, March 2015 "
+timexy,8  March  2015,"TIMEX3 type=""DATE"" value=""2015-03-08T00:00:00""",Instead  she  was a  very active  participant  in the argument  on  8  March  2015.  The  evidence 
+timexy,three days,"TIMEX3 type=""DURATION"" value=""P3D""",at any point over the three days. 
+timexy,one day,"TIMEX3 type=""DURATION"" value=""P1D""","     9          was not a three-day ordeal at all.  It happened in one day, "
+DATE,"Sunday, March 8th",,"    10          on, I believe it was Sunday, March 8th.  I think it was "
+DATE,11          Sunday,,    11          Sunday.  That was the morning where she had started yelling at 
+DATE,March 8th,,"    10          on, I believe it was Sunday, March 8th.  I think it was "
+DATE,8th March,,"    21      A.  As I said previously, on 8th March, I drank, I went down to "
+DATE,DAY 4,,DAY 4 (Re-examination of Mr Depp) 
+DATE,March 8th,,"     4      A.  No, sir.  We had the argument of March 8th, the Sunday, "
+DATE,DAY 5,,DAY 5 (Cross-examination of Stephen Deuters) 
+DATE,"12th 
+     5          March",,
+timexy,five years,"TIMEX3 type=""DURATION"" value=""P5Y""","    15          pressurised or not, five years after the event, you have come "
+DATE,DAY 6,,DAY 6 (Re-examination of Malcolm Connolly)   
+DATE,14      MR,,    14      MR. SHERBORNE:  Can I ask you about the cigarette burn.  You 
+DATE,DAY 13,,"evidence on DAY 13, p.2067, lines 10-11.  "
+DATE,DAY 7,,DAY 7 (Re-examination of Ben King) 
+DATE,many years,,    14      A.  No.  No.  I have been freelance for many years as a 
+DATE,the end of the long,,     6          bedroom at the end of the long corridor upstairs that perhaps 
+DATE,"the next 
+    12          day",,
+DATE,last year,,"    10      Q.  So last year, some time last year? "
+DATE,last year,,"    10      Q.  So last year, some time last year? "
+timexy,three days,"TIMEX3 type=""DURATION"" value=""P3D""","     6          those three days, did you not? "
+DATE,this day,,    13          not dispute that you said that on this day? 
+timexy,three days,"TIMEX3 type=""DURATION"" value=""P3D""","    25          of either the violence over those three days, or indeed when "
+DATE,about years later,,    15      A.  That I found out about years later. 
+DATE,years later,,    15      A.  That I found out about years later. 
+DATE,next day,,    24          next day hidden in various places.  He had taken my nightgown 
+DATE,that day,,    25          or that day. 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",Ms Pennington’s vague account of what she allegedly saw in March 2013 was unconvincing. 
+DATE,a couple of days later,,"    18      A.  Well, I believe it was a couple of days later, so they were "
+DATE,every day,,"     8          is not the sort of thing one sees every day, is it? "
+DATE,"the last ten,",,"    12          the last ten, 15 years? "
+timexy,15 years,"TIMEX3 type=""DURATION"" value=""P15Y""","    12          the last ten, 15 years? "
+DATE,several years ago,,    24          scratches of the feet from several years ago. 
+timexy,March 2015,"TIMEX3 type=""DATE"" value=""2015-03-01T00:00:00""","Incident 9: Stairs at Eastern Columbia PH, March 2015 "
+DATE,DAY 5,,DAY 5 (Re-Examination of Mr Depp) 
+DATE,8th March,,    22          cut was 8th March? 
+timexy,two weeks,"TIMEX3 type=""DURATION"" value=""P2W""","    24      Q.  So, this is about two weeks later.  Can I ask you, after your "
+DATE,23rd March,,"    24      Q.  Mr. Depp, were you wearing this cast on 23rd March, the date "
+DATE,23rd March,,"    24      Q.  Mr. Depp, were you wearing this cast on 23rd March, the date "
+DATE,DAY 9,,DAY 9 (Cross-examination of Travis McGivern) 
+DATE,18      Q.,,"18      Q.  Both Ms. Heard and Mr. Depp had to be restrained, did they "
+DATE,21st April,,     5          covering in that deposition what happened on 21st April and 
+DATE,that day,,     6      THE WITNESS:  I did strike Johnny that day in defence of my 
+DATE,15          years,,"    15          years, Johnny's punching bag and for years I had never ever "
+DATE,all these years,,    18          it was the first time after all these years that I actually 
+DATE,that day,,    13          the freedom to speak freely about my experience that day. 
+DATE,that day,,"    25          that day, was it not? "
+timexy,July 2015,"TIMEX3 type=""DATE"" value=""2015-07-01T00:00:00""","    14      Q.  It is July 2015.  Can I ask, was it just you and Ms. Heard who "
+DATE,9          days,,     9          days and they were kind enough ---- 
+timexy,July 2015,"TIMEX3 type=""DATE"" value=""2015-07-01T00:00:00""",    14      Q.  In July 2015? 
+timexy,November 2015,"TIMEX3 type=""DATE"" value=""2015-11-01T00:00:00""","Incident 11: Thanksgiving, November 2015  "
+timexy,November 2015,"TIMEX3 type=""DATE"" value=""2015-11-01T00:00:00""","     3          apartment PH5 in November 2015.  At one point, late in the "
+timexy,24          November 2015,"TIMEX3 type=""DATE"" value=""2015-11-24T00:00:00""","    24          November 2015 she has made an entry, making it clear that in "
+DATE,that day,,"     5          So she was there on that day, was she not? "
+DATE,10      Q.,,"10      Q.  This is a happy family event that we see on that video, is it "
+timexy,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""",Incident 10: December 2015 
+DATE,DAY 12,,does any third-party testimony support that or Ms Heard’s evidence (given on DAY 12) that 
+timexy,16 December 2015,"TIMEX3 type=""DATE"" value=""2015-12-16T00:00:00""","McMillen saw, in terms of lack of any injuries on 16 December 2015. There was no reason for "
+timexy,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""",Incident 10: December 2015 
+timexy,15          December 2015,"TIMEX3 type=""DATE"" value=""2015-12-15T00:00:00""","    15          December 2015, you were routinely using violence against "
+DATE,20          later,,"    20          later, in fact, after we were well apart, and the divorce was "
+DATE,DAY 5,,DAY 5 (Re-examination of Mr Depp) 
+DATE,16th December,,"    19      Q.  We can see that on 16th December, so the day after the "
+DATE,16th December,,    15          I think you were with Ms. Heard on 16th December because she 
+DATE,the date before,,"    15          16th December, the date before 16th December? "
+DATE,16th December,,"    15          16th December, the date before 16th December? "
+DATE,10      Q.,,10      Q.  Were you there when her makeup was being done? 
+DATE,that day,,    19          what you saw on that day? 
+DATE,that day,,    19          what you saw on that day? 
+DATE,the day,,    22          uninjured throughout the day and at that moment.  Has your 
+DATE,DAY 7,,DAY 7 (Cross-examination of Kevin Murphy) 
+DATE,11      MS,,"11      MS. WASS:  What it says, it gives the date of 15th December 2015, "
+DATE,the date of 15th,,"11      MS. WASS:  What it says, it gives the date of 15th December 2015, "
+timexy,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""","11      MS. WASS:  What it says, it gives the date of 15th December 2015, "
+DATE,"14          December 15th, 2015",,"    14          December 15th, 2015, Mr. Depp beat Ms. Heard so hard in the "
+DATE,16      Q.  All,,"16      Q.  All right.  Was that how Ms. Heard, how you remember "
+DATE,"21st 
+     7          April",,
+DATE,9          March,,     9          March photograph? 
+timexy,March 2015,"TIMEX3 type=""DATE"" value=""2015-03-01T00:00:00""",    12      MR. JUSTICE NICOL:  March 2015. 
+timexy,March 2015,"TIMEX3 type=""DATE"" value=""2015-03-01T00:00:00""",    12      MR. JUSTICE NICOL:  March 2015. 
+DATE,21st April,,    15          your account of 21st April and the injuries you saw.  Are 
+DATE,14      MR,,"14      MR. SHERBORNE:  There, we see there should be a photograph on "
+DATE,"December 15th, 2015",,"    21      A.  I took this photo on December 15th, 2015. "
+DATE,one and a half to,,    15          see what appears to be a one and a half to two-inch vertical 
+timexy,"17 Dec 
+15","TIMEX3 type=""DATE"" value=""2015-12-17T00:00:00""",
+DATE,next day,,"     8          very next day, so on 17th December, Erin Burin is in contact "
+DATE,17th December,,"     8          very next day, so on 17th December, Erin Burin is in contact "
+DATE,DAY 13,,DAY 13. Cross-examination of Raquel Pennington  
+DATE,11          15th,,"    11          15th December 2015, again, this was an incident where you did "
+timexy,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""","    11          15th December 2015, again, this was an incident where you did "
+DATE,December 15th,,    19      A.  On December 15th? 
+DATE,next day,,    12          still the very next day? 
+DATE,next day,,    12          still the very next day? 
+DATE,Christmas 2015,,A recently added incident: The Bahamas. Christmas 2015 
+DATE,5          29th,,"     5          29th December 2015, Johnny drove to the office alone in his "
+timexy,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""","     5          29th December 2015, Johnny drove to the office alone in his "
+DATE,about a year,,     7          Johnny saying that to me.  Johnny from about a year on ---- 
+timexy,April 2016,"TIMEX3 type=""DATE"" value=""2016-04-01T00:00:00""","Incident 13: Ms Heard’s Birthday Dinner, April 2016 "
+timexy,July 2016,"TIMEX3 type=""DATE"" value=""2016-07-01T00:00:00""",recording which Ms Heard made of her meeting with Mr Depp in July 2016 contains Mr Depp’s 
+timexy,17 years,"TIMEX3 type=""DURATION"" value=""P17Y""",    25          government my taxes for 17 years. 
+DATE,21st April,,"     3          notes.  She explains that on 21st April, ""Client invited ---- "
+DATE,27th August,,"     4      MR. JUSTICE NICOL:  Sorry, this is dated 27th August, is it? "
+DATE,10          21st,,    10          21st April 2016? 
+timexy,April 2016,"TIMEX3 type=""DATE"" value=""2016-04-01T00:00:00""",    10          21st April 2016? 
+DATE,the second day in,,    19          did of your meeting on the second day in July 2016 in the 
+timexy,July 2016,"TIMEX3 type=""DATE"" value=""2016-07-01T00:00:00""",    19          did of your meeting on the second day in July 2016 in the 
+DATE,DAY 7,,DAY 7 (Cross-examination of Kevin Murphy) 
+DATE,a very busy day,,"2      A.  I believe at the time Johnny was busy, had a very busy day, or "
+DATE,12th May,,"    14      Q.  Now, your witness statement suggests that on 12th May, you had "
+timexy,December 2019,"TIMEX3 type=""DATE"" value=""2019-12-01T00:00:00""","     9          witness statement.  In December 2019, which is the date of "
+DATE,the year,,"    12      A.  What was the year, sorry? "
+timexy,December 2019,"TIMEX3 type=""DATE"" value=""2019-12-01T00:00:00""","     9          witness statement.  In December 2019, which is the date of "
+timexy,August 2016,"TIMEX3 type=""DATE"" value=""2016-08-01T00:00:00""","    16          you stopped, you parted company with Mr. Depp in August 2016; "
+timexy,"June 
+    20","TIMEX3 type=""DATE"" value=""2020-06-01T00:00:00""",
+timexy,21 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-21T00:00:00""","Mr Depp’s account of the night of 21 April 2016. Ms Heard partied so hard, she was sick. Mr "
+timexy,April 2016,"TIMEX3 type=""DATE"" value=""2016-04-01T00:00:00""",    25      Q.  We can see at the top that it says 23rd April 2016? 
+DATE,the day,,     3      Q.  That is the day of Coachella.  Can you identify 
+timexy,21 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-21T00:00:00""",Ms Heard punched (haymakered) Mr Depp on the night of 21 April 2016. 
+DATE,the days before,,"     4          and the days before, and he was taking these kinds of meetings "
+timexy,July 2016,"TIMEX3 type=""DATE"" value=""2016-07-01T00:00:00""","11      Q.  When you met Mr. Depp in July 2016, so after the restraining "
+DATE,the 21st,,"     4      MS. LAWS:  After the 21st, we are on the 22nd, so the morning you "
+DATE,the 22nd,,"     4      MS. LAWS:  After the 21st, we are on the 22nd, so the morning you "
+DATE,that weekend,,    17      A.  Yes.  I threw up a few times that weekend. 
+DATE,the date of 26th,,"    22      Q.  We have the date of 26th April 2016, so just at the end, so "
+timexy,April 2016,"TIMEX3 type=""DATE"" value=""2016-04-01T00:00:00""","    22      Q.  We have the date of 26th April 2016, so just at the end, so "
+timexy,five days,"TIMEX3 type=""DURATION"" value=""P5D""","    23          Coachella would have ended by then, five days ---- "
+DATE,the weekend,,19      Q.  But is what your sister said about the weekend true? 
+DATE,DAY 13,,DAY 13. Cross-examination of Raquel Pennington  
+DATE,the weekend,,    15      A.  We spent the weekend together. 
+DATE,that weekend,,    18          that weekend. 
+DATE,that weekend,,    18          that weekend. 
+DATE,14 – 21st,,Incident 14 – 21st May 2016 in PH3 at Eastern Columbia  
+timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",Incident 14 – 21st May 2016 in PH3 at Eastern Columbia  
+timexy,21 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""",Events immediately prior to 21 May 2016 
+DATE,18th May,,"    23          about the application for the restraining order, on 18th May, "
+DATE,the 21st May,,    16      MS. LAWS:  By the 21st May you were taking steps in preparation 
+DATE,21 May,,21 May build up  
+DATE,21st May,,"     9      Q.  You had an arranged on 21st May to go to the flat, PH3, to "
+DATE,22nd April,,"    12          ""Since the incident on 22nd April Ms. Heard has repeatedly "
+DATE,8          years,,     8          years.  I was not prepared for that. 
+DATE,May 21st,,May 21st  
+timexy,21 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""","his mother, and of his financial difficulties by taking drugs on 21 May 2016 "
+DATE,"21st, 22nd",,"     8      Q.  On her cheek.  So 21st, 22nd and 27th are photographs of a red "
+DATE,day 1,,"    25      A.  I have never shifted my account from day 1 till now, as you "
+DATE,"21st 
+    18          May",,
+DATE,14      MS,,14      MS. LAWS:  It sounds like it is the female officer who was telling 
+DATE,the beginning of,,"    20          start at the top, so we do not appear to have the beginning of "
+DATE,DAY 13,,DAY 13 (Cross-examination of Raquel Pennington) 
+DATE,the next few days,,"    22          together, spent the next few days taking photographs and "
+DATE,the days,,"In respect of the immediate aftermath, that is the days 22 to 27 May 2016, what emerged from "
+timexy,27 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-27T00:00:00""","In respect of the immediate aftermath, that is the days 22 to 27 May 2016, what emerged from "
+DATE,the subsequent days,,"Ms Heard over the subsequent days, such as Samantha McMillen, that the weight of evidence "
+timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",    19          activities on 21st May 2016? 
+timexy,July 2016,"TIMEX3 type=""DATE"" value=""2016-07-01T00:00:00""",    22          about this on 18th July 2016. 
+DATE,21 May,,on 21 May and what he saw 
+DATE,that day,,attended the penthouse that day. That was consistent with evidence gleaned from Ms Heard 
+DATE,Approximately 14,,     2      A.  Approximately 14. 
+timexy,21  May  2016,"TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""",The  days  following  21  May  2016  are  summarised  in  an  Annex  to  the  Claimant’s  Closing 
+DATE,the week after,,in the week after 21 May 2016. The fact that she had spoken to Ms Heard at close range was 
+timexy,21 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""",in the week after 21 May 2016. The fact that she had spoken to Ms Heard at close range was 
+DATE,earlier in 2015,,     9          Eastern Columbia Building earlier in 2015; do you agree? 
+DATE,27th May,,"     4      Q.  Now, on 27th May, you saw Ms. Heard at your desk, you were "
+DATE,that week,,     9      A.  That is correct.  And I had seen her previously that week and 
+DATE,the 23rd,,"    16          on Monday, the 23rd, walking through the lobby? "
+DATE,"Monday, Tuesday",,"    20      A.  On Monday, Tuesday, and Wednesday? "
+DATE,those days,,"    24          foundation on those days, the Monday, the Tuesday and the "
+DATE,the Monday,,"    24          foundation on those days, the Monday, the Tuesday and the "
+DATE,the Tuesday,,"    24          foundation on those days, the Monday, the Tuesday and the "
+DATE,that week,,friends playing around that week 
+DATE,that week,,meet Ms Heard during that week in May  
+DATE,that week,,meet Ms Heard during that week in May  
+DATE,"14          Saturday, 21st May",,"    14          Saturday, 21st May, when you were not on duty.  Have you got "
+DATE,May 22nd,,"    19          not on duty on May 22nd, you received the call from "
+DATE,23rd May,,"     4      Q.  Yes.  If you look on your witness statement, on 23rd May, can "
+DATE,24th May,,"    23      Q.  Again, 24th May, you see her, and you say the same thing "
+DATE,the 25th,,"     4      Q.  Then we have Wednesday, the 25th.  Again, you see her on "
+timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",into her at the Sweetzer house on 24th May 2016 
+DATE,the day,,    20      MS. WASS:  Could she have been wearing makeup on the day when you 
+DATE,May 24th,,"     9      Q.  So, Ms. Heard had no idea, when you turned up on May 24th, "
+DATE,27th May,,"     7          27th May, do you want to change your evidence as to how you "
+timexy,24 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-24T00:00:00""","Ms Vargas saw Ms Heard on the same day, 24 May 2016, at Sweetzer  "
+DATE,24th May,,"    13      MR. JUSTICE NICOL:  The question is, on 24th May, did Ms. Heard "
+DATE,several weeks,,     3          already confirmed you had not seen her for several weeks 
+DATE,that day,,    13      A.  She was not wearing makeup on that day. 
+DATE,24th May,,"    13      MR. JUSTICE NICOL:  The question is, on 24th May, did Ms. Heard "
+DATE,that day,,    24      Q.  Did you have a lot of contact with her that day? 
+timexy,"21 May 
+2016","TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""",
+DATE,the week,,"Importantly, he was able to testify to seeing Ms Heard on a number of occasions in the week "
+timexy,21 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""","following 21 May 2016. With Mr Baruch, Ms Heard does not, cannot, say that she did not see "
+timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""","following 21 May 2016. With Mr Baruch, Ms Heard does not, cannot, say that she did not see "
+DATE,May 21st 2016,,"     8      Q.  It says: ""On May 21st 2016 I was out in the neighbourhood. "
+timexy,22 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-22T00:00:00""",P.1369 (on 22 May 2016)  
+DATE,that day,,    11          know that Ms. Heard was going to a party that day? 
+timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""","    23      Q.  Now, you had known Ms. Heard for some time by May 2016, had "
+timexy,March 2016,"TIMEX3 type=""DATE"" value=""2016-03-01T00:00:00""","    25      A.  Since March 2016, I mean 2013. "
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","     2      Q.  2013.  They moved in in March 2013, so you had known her three "
+timexy,two months,"TIMEX3 type=""DURATION"" value=""P2M""",     3          years and two months; yes? 
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","     2      Q.  2013.  They moved in in March 2013, so you had known her three "
+timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","     2      Q.  2013.  They moved in in March 2013, so you had known her three "
+timexy,7          March 2013,"TIMEX3 type=""DATE"" value=""2013-03-07T00:00:00""",     7          March 2013. 
+timexy,three years,"TIMEX3 type=""DURATION"" value=""P3Y""","    21          for three years and a bit, whether you had ever known her go "
+DATE,the 22nd,,"    10          not on the 22nd when you said you saw her without a mark, but "
+timexy,"May 
+    11","TIMEX3 type=""DATE"" value=""2011-05-01T00:00:00""",
+DATE,that day,,"    18      Q.  On that day, on 22nd May, did you see Ms. Heard leave the "
+DATE,22nd May,,"    18      Q.  On that day, on 22nd May, did you see Ms. Heard leave the "
+DATE,May 22nd,,"     5          saw her up close on May 22nd, you saw her up close again on "
+DATE,May 23rd,,"     6          May 23rd, you saw her up close also on May 24th, and you saw "
+DATE,May 24th,,"     6          May 23rd, you saw her up close also on May 24th, and you saw "
+DATE,the 25th,,"     7          her up close again on either the 25th, you think, or even "
+DATE,"Sunday, Monday, Tuesday, Wednesday",,"    10      A.  Sunday, Monday, Tuesday, Wednesday.  Sunday, the first "
+DATE,21 May,,Faced with the substantial number and variety of witnesses who saw Ms Heard after 21 May 
+DATE,23rd May,,"4      Q.  23rd May, that is what you filed for divorce.  On that day, "
+DATE,that day,,"4      Q.  23rd May, that is what you filed for divorce.  On that day, "
+DATE,22          day,,    22          day; do you remember that? 
+DATE,the next day,,"     3      MS. LAWS:  24th May, so the next day now, Hilda Vargas; did you "
+DATE,24th May,,"    24      Q.  On 24th May, several people see you with no injury, up close, "
+timexy,21 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""",Ms Heard’s conduct after 21 May 2016 when she was seeking to get hold of Mr Depp were 
+DATE,the last,,"     9          number of incidents in the last six months."" "
+timexy,six months,"TIMEX3 type=""DURATION"" value=""P6M""","     9          number of incidents in the last six months."" "
+DATE,"the last six 
+    25          months",,
+DATE,a few days,,    19          wraps potentially for a few days and those few days were 
+DATE,those few days,,    19          wraps potentially for a few days and those few days were 
+DATE,those few days,,    19          wraps potentially for a few days and those few days were 
+DATE,2          day,,2          day was displaying a determination to get his answer to see if 
+DATE,a few days,,    19          wraps potentially for a few days and those few days were 
+DATE,the 25th,,"    14          left-hand column -- from you to Mr. Depp, on the 25th, in what "
+DATE,the 25th,,"     7      Q.  On the 25th, you would have remembered full well whether you "
+DATE,only a few days,,     9          only a few days away.  It was not five years. 
+timexy,five years,"TIMEX3 type=""DURATION"" value=""P5Y""",     9          only a few days away.  It was not five years. 
+DATE,the 25th,,"     7      Q.  On the 25th, you would have remembered full well whether you "
+DATE,the 25th,,"     7      Q.  On the 25th, you would have remembered full well whether you "
+DATE,four and a half years,,     8          trying to hide for four and a half years prior.  I was not 
+DATE,"16          months, days",,"    16          months, days, weeks, leading up to that and on our phone "
+DATE,a few days,,"    23          looking back on it from where I sit now, a few days would not "
+DATE,a few days,,"    23          looking back on it from where I sit now, a few days would not "
+DATE,a few days,,"    23          looking back on it from where I sit now, a few days would not "
+DATE,11      MR,,"   11      MR. JUSTICE NICOL:  The text says:  ""I thought you had filed"", and "
+DATE,the 25th,,"    22      Q.  So, quite up close [on CCTV] to you there, on the 25th? "
+DATE,this same day,,"    25          from this same day, this is the desk area now.  You cannot see "
+timexy,27 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-27T00:00:00""",Ms Heard’s attendance at the Courthouse on 27 May 2016 was for publicity so that she could 
+DATE,29th May,,2      Q.  29th May? [29 May article ] 
+DATE,29th May,,2      Q.  29th May? [29 May article ] 
+DATE,28th may,,"     6          Saturday, which was 28th may, the restraining order "
+DATE,the 27th,,"     7          application being on Friday, the 27th.  Do you remember  "
+DATE,the day,,"    19      Q.  This is the day after, the morning after, does that sound "
+DATE,DAY 11,,DAY 11 (Cross-examination of Amber Heard)  
+DATE,a second ago,,"    24      Q.  So, a second ago, just before that answer, you said ""I do not "
+DATE,between 21st May,,     7          you on a number of occasions between 21st May and when you 
