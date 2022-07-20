@@ -2,3 +2,6 @@
 .idea
 Lib
 Scripts
+pyvenv.cfg
+redheart.iml
+requirements.txt
