@@ -1,140 +1,394 @@
-label,text,id,surrounding_text
-timexy,three weeks,"TIMEX3 type=""DURATION"" value=""P3W""","published in The Sun. The Court has heard three weeks of evidence, and despite a "
-DATE,2019,,Koutsogiannis v  The Random House Group Limited  [2019]  EWHC  48  (QB)  at  [12] 
-DATE,2019,,1 Lachaux v Independent Print Ltd [2019] UKSC; [2019] 3 WLR 18 (Tab 11 of the Authorities Bundle) 
-DATE,2019] 3,,1 Lachaux v Independent Print Ltd [2019] UKSC; [2019] 3 WLR 18 (Tab 11 of the Authorities Bundle) 
-DATE,C(cid:182)s 2nd,,26. Mr Depp(cid:182)s evidence about harm to his reputation and impact on his career (C(cid:182)s 2nd WS 
-DATE,2018,,See  Bokhova  v  Associated  Newspapers  Ltd  [2018]  EWHC  2032;  [2019]  QB  861  at 
-DATE,2019,,See  Bokhova  v  Associated  Newspapers  Ltd  [2018]  EWHC  2032;  [2019]  QB  861  at 
-DATE,2003,,"News  Group  Newspapers  Ltd  [2003]  EMLR  11,  a  decision  referred  to  in  the "
-DATE,2008] UKHL 33,,of State for Northern Ireland intervening) [2008] UKHL 33; [2008] 1 WLR 1499 in the 
-DATE,2006,,Richards  LJ  in  R(N)  v Mental  Health  Review  Tribunal  (Northern  Region)  [2006]  QB 
-DATE,2002,,Council  [2002]  EWHC  1600  (QB)  which  was  referred  to  in  the  Claimant(cid:182)s  Skeleton 
-DATE,4  days,,"46. Mr  Depp,  as  he  made  abundantly  clear  throughout  his  4  days  in  the  witness  box, "
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","March 2013, it has been hard to keep up and make sense of Ms Heard(cid:182)s evidence.   "
-DATE,1985] 1 Ll(cid:82)(cid:92)d(cid:182)(cid:86,,as [1985] 1 Ll(cid:82)(cid:92)d(cid:182)(cid:86) Re(cid:83) 1 at [57]. [i.e. a citation to The Ocean Frost] 
-DATE,1985,,as [1985] 1 Ll(cid:82)(cid:92)d(cid:182)(cid:86) Re(cid:83) 1 at [57]. [i.e. a citation to The Ocean Frost] 
-DATE,1553 & 1553-1558,,"1542, 1543, 1547, 1549, 1550, 1552, 1553 & 1553-1558. "
-timexy,August 2016,"TIMEX3 type=""DATE"" value=""2016-08-01T00:00:00""",she was deposed in August 2016. But her account of her injuries  were inconsistent 
-DATE,Transcript Day 12,,"an incident in two parts. Transcript Day 12, pages 1930-1938. "
-timexy,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""","Depp in December 2015 [2/59B/D227-D231], Ms Heard created a wholly new, but "
-timexy,26.6.20,"TIMEX3 type=""DATE"" value=""2020-06-26T00:00:00""","extremely serious alleged assault: AH 5th WS of 26.6.20, Confidential Schedule "
-DATE,between 21,,"which, in table form, summarises all the people who saw Ms Heard between 21 and "
-timexy,26  May  2016,"TIMEX3 type=""DATE"" value=""2016-05-26T00:00:00""",26  May  2016  and  (cid:177)  where  they  have  given  evidence  (cid:177)  references  to  where  that 
-timexy,17 July 2020,"TIMEX3 type=""DATE"" value=""2020-07-17T00:00:00""","relies upon his evidence as hearsay (Claimant(cid:182)s Hearsa(cid:92) Notice, 17 July 2020). "
-timexy,18 July 2016,"TIMEX3 type=""DATE"" value=""2016-07-18T00:00:00""","66. In short, the contents of the deposition of Officer Saenz on 18 July 2016 [3/87/F43-"
-timexy,18 July 2016,"TIMEX3 type=""DATE"" value=""2016-07-18T00:00:00""","66. In short, the contents of the deposition of Officer Saenz on 18 July 2016 [3/87/F43-"
-DATE,3/86/F40-42,,"[3/88/F55-67],  and  the  Declaration  of  Laura  Divenere  [3/86/F40-42]  should  be "
-timexy,"28 July 
+label,page,text,id,surrounding_text
+timexy,1,three weeks,"TIMEX3 type=""DURATION"" value=""P3W""","published in The Sun. The Court has heard three weeks of evidence, and despite a "
+DATE,2,2019,,Koutsogiannis v  The Random House Group Limited  [2019]  EWHC  48  (QB)  at  [12] 
+DATE,5,2019,,"1 Lachaux v Independent Print Ltd [2019] UKSC; [2019] 3 WLR 18 (Tab 11 of the Authorities Bundle) 
+ "
+DATE,5,2019] 3,,"1 Lachaux v Independent Print Ltd [2019] UKSC; [2019] 3 WLR 18 (Tab 11 of the Authorities Bundle) 
+ "
+DATE,6,C(cid:182)s 2nd,,26. Mr Depp(cid:182)s evidence about harm to his reputation and impact on his career (C(cid:182)s 2nd WS 
+DATE,6,2018,,See  Bokhova  v  Associated  Newspapers  Ltd  [2018]  EWHC  2032;  [2019]  QB  861  at 
+DATE,6,2019,,See  Bokhova  v  Associated  Newspapers  Ltd  [2018]  EWHC  2032;  [2019]  QB  861  at 
+DATE,6,2003,,"News  Group  Newspapers  Ltd  [2003]  EMLR  11,  a  decision  referred  to  in  the "
+DATE,7,2008] UKHL 33,,of State for Northern Ireland intervening) [2008] UKHL 33; [2008] 1 WLR 1499 in the 
+DATE,7,2006,,Richards  LJ  in  R(N)  v Mental  Health  Review  Tribunal  (Northern  Region)  [2006]  QB 
+DATE,7,2002,,Council  [2002]  EWHC  1600  (QB)  which  was  referred  to  in  the  Claimant(cid:182)s  Skeleton 
+DATE,9,4  days,,"46. Mr  Depp,  as  he  made  abundantly  clear  throughout  his  4  days  in  the  witness  box, "
+timexy,10,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","March 2013, it has been hard to keep up and make sense of Ms Heard(cid:182)s evidence.   "
+DATE,10,1985] 1 Ll(cid:82)(cid:92)d(cid:182)(cid:86,,"(cid:179)(cid:171)i(cid:81) decidi(cid:81)g (cid:88)(cid:83)(cid:82)(cid:81) (cid:87)he c(cid:85)edibili(cid:87)(cid:92) (cid:82)f a (cid:90)i(cid:87)(cid:81)e(cid:86)(cid:86) (cid:87)he c(cid:82)(cid:88)(cid:85)(cid:87) ma(cid:92) ha(cid:89)e (cid:85)ega(cid:85)d (cid:87)(cid:82) 
+the contemporaneous documents, following the guidance given in cases such 
+as [1985] 1 Ll(cid:82)(cid:92)d(cid:182)(cid:86) Re(cid:83) 1 at [57]. [i.e. a citation to The Ocean Frost] 
+There  is  great  assistance  to  be  obtained  from  extra-judicial  writing  of  Lord 
+Bi(cid:81)gham 
+i(cid:81)  a  cha(cid:83)(cid:87)e(cid:85)  headed  (cid:179)The  J(cid:88)dge  a(cid:86)  J(cid:88)(cid:85)(cid:82)(cid:85):  The  J(cid:88)dicial 
+De(cid:87)e(cid:85)mi(cid:81)a(cid:87)i(cid:82)(cid:81) (cid:82)f Fac(cid:87)(cid:88)al I(cid:86)(cid:86)(cid:88)e(cid:86)(cid:180) i(cid:81) The B(cid:88)(cid:86)i(cid:81)e(cid:86)(cid:86) (cid:82)f J(cid:88)dgi(cid:81)g , O(cid:91)f(cid:82)(cid:85)d 2000, 
+pp.3ff; Current Legal Problems , (Stevens & Sons Ltd, 1985) Vol.38, pp.1(cid:177)27. 
+Lord  Bingham  cited  Sir  Richard  Eggleston  QC,  Evidence,  Proof  and 
+Probability (1978), 155 who set out the main tests to be used by a judge to 
+determine whether a witness is lying or not. "
+DATE,11,1553 & 1553-1558,,"1542, 1543, 1547, 1549, 1550, 1552, 1553 & 1553-1558. "
+timexy,11,August 2016,"TIMEX3 type=""DATE"" value=""2016-08-01T00:00:00""",she was deposed in August 2016. But her account of her injuries  were inconsistent 
+DATE,12,Transcript Day 12,,"an incident in two parts. Transcript Day 12, pages 1930-1938. "
+timexy,12,December 2015,"TIMEX3 type=""DATE"" value=""2015-12-01T00:00:00""","Depp in December 2015 [2/59B/D227-D231], Ms Heard created a wholly new, but "
+timexy,12,26.6.20,"TIMEX3 type=""DATE"" value=""2020-06-26T00:00:00""","extremely serious alleged assault: AH 5th WS of 26.6.20, Confidential Schedule "
+DATE,13,between 21,,"which, in table form, summarises all the people who saw Ms Heard between 21 and "
+timexy,13,26  May  2016,"TIMEX3 type=""DATE"" value=""2016-05-26T00:00:00""",26  May  2016  and  (cid:177)  where  they  have  given  evidence  (cid:177)  references  to  where  that 
+timexy,14,17 July 2020,"TIMEX3 type=""DATE"" value=""2020-07-17T00:00:00""","relies upon his evidence as hearsay (Claimant(cid:182)s Hearsa(cid:92) Notice, 17 July 2020). "
+timexy,14,18 July 2016,"TIMEX3 type=""DATE"" value=""2016-07-18T00:00:00""","66. In short, the contents of the deposition of Officer Saenz on 18 July 2016 [3/87/F43-"
+timexy,14,18 July 2016,"TIMEX3 type=""DATE"" value=""2016-07-18T00:00:00""","66. In short, the contents of the deposition of Officer Saenz on 18 July 2016 [3/87/F43-"
+DATE,14,3/86/F40-42,,"[3/88/F55-67],  and  the  Declaration  of  Laura  Divenere  [3/86/F40-42]  should  be "
+timexy,15,"28 July 
 
 2016","TIMEX3 type=""DATE"" value=""2016-07-28T00:00:00""",
-DATE,F149-F157,,2016 deposition [3/94/F149-F157] was made close in time to the relevant events 
-timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",of May 2016. 
-timexy,28 July 2016,"TIMEX3 type=""DATE"" value=""2016-07-28T00:00:00""","proceedings  and that in respect of the 28 July 2016  deposition, Mr  Harrell  was "
-DATE,2018,,74. The  principles  are  summarised  in  Monir  v  Wood  [2018]  EWHC  3525  (QB)  at  [217] 
-DATE,2016] EWHC 1226,,(where Nicklin J adopted the summary in Barron v Vines [2016] EWHC 1226 (QB)). 
-DATE,C(cid:182)s 2nd,,77. Mr Depp(cid:182)s evidence about harm to his reputation and impact on his career [C(cid:182)s 2nd WS 
-DATE,DAY 9,,"was not challenged at all on her evidence (Transcript, DAY 9, pages 1489-1493).  "
-timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""","Sun having previously published (a) an article in May 2016, in which it had reported "
-timexy,17 August 2016,"TIMEX3 type=""DATE"" value=""2016-08-17T00:00:00""",that there was no evidence warranting a report of a crime and (b) on 17 August 2016 
-timexy,"20 
+DATE,15,F149-F157,,2016 deposition [3/94/F149-F157] was made close in time to the relevant events 
+timexy,15,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",of May 2016. 
+timexy,15,28 July 2016,"TIMEX3 type=""DATE"" value=""2016-07-28T00:00:00""","proceedings  and that in respect of the 28 July 2016  deposition, Mr  Harrell  was "
+DATE,16,2018,,74. The  principles  are  summarised  in  Monir  v  Wood  [2018]  EWHC  3525  (QB)  at  [217] 
+DATE,16,2016] EWHC 1226,,(where Nicklin J adopted the summary in Barron v Vines [2016] EWHC 1226 (QB)). 
+DATE,16,C(cid:182)s 2nd,,77. Mr Depp(cid:182)s evidence about harm to his reputation and impact on his career [C(cid:182)s 2nd WS 
+DATE,16,DAY 9,,"was not challenged at all on her evidence (Transcript, DAY 9, pages 1489-1493).  "
+timexy,17,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""","Sun having previously published (a) an article in May 2016, in which it had reported "
+timexy,17,17 August 2016,"TIMEX3 type=""DATE"" value=""2016-08-17T00:00:00""",that there was no evidence warranting a report of a crime and (b) on 17 August 2016 
+timexy,17,"20 
 
 March 2020","TIMEX3 type=""DATE"" value=""2020-03-20T00:00:00""",
-timexy,March 2017,"TIMEX3 type=""DATE"" value=""2017-03-01T00:00:00""","2 In March 2017, HHJ Parkes QC sitting as a Deputy High Court Judge in Lisle-Mainwaring v ANL [2017] "
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",8th March 2013 
-timexy,8 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-08T00:00:00""",there were two incidents (one on 8 March 2013 to which the text mentioning the 
-timexy,8 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-08T00:00:00""",there were two incidents (one on 8 March 2013 to which the text mentioning the 
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",8th March 2013 
-DATE,8th March,,8th March 2013 
-DATE,DAY 2,,"Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night "
-DATE,The day,,"Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night "
-DATE,DAY 2,,"Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night "
-DATE,late March,,Ms Heard went to the film set before late March.   
-DATE,"12th 
+timexy,17,March 2017,"TIMEX3 type=""DATE"" value=""2017-03-01T00:00:00""","2 In March 2017, HHJ Parkes QC sitting as a Deputy High Court Judge in Lisle-Mainwaring v ANL [2017] 
+EWHC 543 (QB) observed at [62] (cid:179)I(cid:87) ha(cid:86) (cid:81)(cid:82)(cid:90) bec(cid:82)me c(cid:82)(cid:81)(cid:89)e(cid:81)(cid:87)i(cid:82)(cid:81)al (cid:87)(cid:82) (cid:85)ec(cid:82)g(cid:81)i(cid:86)e a (cid:181)ceili(cid:81)g(cid:182) f(cid:82)(cid:85) ge(cid:81)e(cid:85)al 
+damages in defamation, which broadly corresponds to the maximum level of damages for pain, suffering 
+and loss of amenity in personal injury cases. That figure now appears to be of the order of £300,000 
+(see Cairns v Modi at [25] and Simmons v Castle (No.2) [2012] EWCA Civ 1288, [2013] EMLR 4 )(cid:180) "
+timexy,19,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",8th March 2013 
+timexy,19,8 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-08T00:00:00""",there were two incidents (one on 8 March 2013 to which the text mentioning the 
+timexy,19,8 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-08T00:00:00""",there were two incidents (one on 8 March 2013 to which the text mentioning the 
+timexy,19,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",8th March 2013 
+DATE,19,8th March,,8th March 2013 
+DATE,19,DAY 2,,"1 In cross-e(cid:91)a(cid:80)(cid:76)(cid:81)a(cid:87)(cid:76)(cid:82)(cid:81) (cid:82)(cid:73) (cid:87)(cid:75)e C(cid:79)a(cid:76)(cid:80)a(cid:81)(cid:87), (cid:87)(cid:75)e De(cid:73)e(cid:81)da(cid:81)(cid:87)(cid:86) (cid:73)(cid:76)(cid:85)(cid:80)(cid:79)(cid:92) (cid:87)(cid:76)ed (cid:87)(cid:75)e (cid:179)Pa(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74) I(cid:81)c(cid:76)de(cid:81)(cid:87)(cid:180) (cid:87)(cid:82) (cid:73)(cid:76)(cid:79)(cid:80)(cid:76)(cid:81)(cid:74) (cid:87)(cid:75)e 
+Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night 
+of the painting, you were due to appear on a film set.(cid:180) DAY 2, (cid:83)a(cid:74)e 197, (cid:79)(cid:76)(cid:81)e(cid:86) 18-23. No-one suggests 
+Ms Heard went to the film set before late March.   "
+DATE,19,The day,,"1 In cross-e(cid:91)a(cid:80)(cid:76)(cid:81)a(cid:87)(cid:76)(cid:82)(cid:81) (cid:82)(cid:73) (cid:87)(cid:75)e C(cid:79)a(cid:76)(cid:80)a(cid:81)(cid:87), (cid:87)(cid:75)e De(cid:73)e(cid:81)da(cid:81)(cid:87)(cid:86) (cid:73)(cid:76)(cid:85)(cid:80)(cid:79)(cid:92) (cid:87)(cid:76)ed (cid:87)(cid:75)e (cid:179)Pa(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74) I(cid:81)c(cid:76)de(cid:81)(cid:87)(cid:180) (cid:87)(cid:82) (cid:73)(cid:76)(cid:79)(cid:80)(cid:76)(cid:81)(cid:74) (cid:87)(cid:75)e 
+Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night 
+of the painting, you were due to appear on a film set.(cid:180) DAY 2, (cid:83)a(cid:74)e 197, (cid:79)(cid:76)(cid:81)e(cid:86) 18-23. No-one suggests 
+Ms Heard went to the film set before late March.   "
+DATE,19,DAY 2,,"1 In cross-e(cid:91)a(cid:80)(cid:76)(cid:81)a(cid:87)(cid:76)(cid:82)(cid:81) (cid:82)(cid:73) (cid:87)(cid:75)e C(cid:79)a(cid:76)(cid:80)a(cid:81)(cid:87), (cid:87)(cid:75)e De(cid:73)e(cid:81)da(cid:81)(cid:87)(cid:86) (cid:73)(cid:76)(cid:85)(cid:80)(cid:79)(cid:92) (cid:87)(cid:76)ed (cid:87)(cid:75)e (cid:179)Pa(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74) I(cid:81)c(cid:76)de(cid:81)(cid:87)(cid:180) (cid:87)(cid:82) (cid:73)(cid:76)(cid:79)(cid:80)(cid:76)(cid:81)(cid:74) (cid:87)(cid:75)e 
+Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night 
+of the painting, you were due to appear on a film set.(cid:180) DAY 2, (cid:83)a(cid:74)e 197, (cid:79)(cid:76)(cid:81)e(cid:86) 18-23. No-one suggests 
+Ms Heard went to the film set before late March.   "
+DATE,19,late March,,"1 In cross-e(cid:91)a(cid:80)(cid:76)(cid:81)a(cid:87)(cid:76)(cid:82)(cid:81) (cid:82)(cid:73) (cid:87)(cid:75)e C(cid:79)a(cid:76)(cid:80)a(cid:81)(cid:87), (cid:87)(cid:75)e De(cid:73)e(cid:81)da(cid:81)(cid:87)(cid:86) (cid:73)(cid:76)(cid:85)(cid:80)(cid:79)(cid:92) (cid:87)(cid:76)ed (cid:87)(cid:75)e (cid:179)Pa(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74) I(cid:81)c(cid:76)de(cid:81)(cid:87)(cid:180) (cid:87)(cid:82) (cid:73)(cid:76)(cid:79)(cid:80)(cid:76)(cid:81)(cid:74) (cid:87)(cid:75)e 
+Keith Richards documentary (cid:177) See DAY 2, page 196, lines 20-23: (cid:179)MS WASS: The day after the night 
+of the painting, you were due to appear on a film set.(cid:180) DAY 2, (cid:83)a(cid:74)e 197, (cid:79)(cid:76)(cid:81)e(cid:86) 18-23. No-one suggests 
+Ms Heard went to the film set before late March.   "
+DATE,20,"12th 
 
 March",,
-timexy,August 2014,"TIMEX3 type=""DATE"" value=""2014-08-01T00:00:00""",8.  Fifth Incident: Bahamas detox in August 2014 (ReAmDef ¶8.a.5)  
-DATE,DAY 4,,"9.2. See Transcript, DAY 4, page 377-379 "
-DATE,DAY 4,,"9.2. See Transcript, DAY 4, page 377-379 "
-timexy,three day,"TIMEX3 type=""DURATION"" value=""P3D""",11. Eighth Incident: Australia three day hostage situation (ReAmDef ¶8.a.8-11) 
-DATE,DAY 4,,"9.2. See Transcript, DAY 4, page 377-379 "
-timexy,November 2015,"TIMEX3 type=""DATE"" value=""2015-11-01T00:00:00""","12. Eleventh Incident: Thanksgiving, November 2015 (Re-Am Def ¶8.a.14) "
-DATE,DAY 4,,"See Transcript, DAY 4, page 528, line 8 (cid:177) page 531, line 11. "
-timexy,"May 21, 2016","TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""","14. Fourteenth Incident: May 21, 2016 at the Eastern Columbia (Re-AmDef ¶8(d)-(l)) "
-DATE,DAY 4,,"See Transcript, DAY 4, page 528, line 8 (cid:177) page 531, line 11. "
-timexy,28 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-28T00:00:00""",28 May 2016 at 6/148E/894.257 (cid:177) F894.259 which Ms Heard states (cid:90)e(cid:85)e (cid:179)photos 
-timexy,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",28 May 2016 at 6/148E/894.257 (cid:177) F894.259 which Ms Heard states (cid:90)e(cid:85)e (cid:179)photos 
-timexy,21 June 2019,"TIMEX3 type=""DATE"" value=""2019-06-21T00:00:00""",21 June 2019  
-timexy,12 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-12T00:00:00""",that evening. The date of that text is 12 March 2013. 
-DATE,a couple of days later,,"and Ms Heard told her a couple of days later that the Claimant had tried to burn it, "
-DATE,AH 1st,,6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
-DATE,AH 1st,,6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
-DATE,AH 1st,,6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
-timexy,12 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-12T00:00:00""",text: that text is 12 March 2013. 
-timexy,12 December 2019,"TIMEX3 type=""DATE"" value=""2019-12-12T00:00:00""",12 December 2019 
-timexy,15 December 2019,"TIMEX3 type=""DATE"" value=""2019-12-15T00:00:00""",15 December 2019  
-timexy,6 March 2020,"TIMEX3 type=""DATE"" value=""2020-03-06T00:00:00""",6 March 2020  
-timexy,June 2020,"TIMEX3 type=""DATE"" value=""2020-06-01T00:00:00""",20th June 2020  
-timexy,"9  March 
-2013","TIMEX3 type=""DATE"" value=""2013-03-09T00:00:00""",
-timexy,24 June 2020,"TIMEX3 type=""DATE"" value=""2020-06-24T00:00:00""",On or around 24 June 2020 
-timexy,"20  March 
-2013","TIMEX3 type=""DATE"" value=""2013-03-20T00:00:00""",
-DATE,20 March,,on evening of 20 March.  
-timexy,July 2020,"TIMEX3 type=""DATE"" value=""2020-07-01T00:00:00""",4th July 2020 
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
-DATE,that month,,and many fights over that month about the painting. While the incident is as I have 
-DATE,8 March 2013(cid:180,,10. Re-A(cid:80)e(cid:81)ded Defe(cid:81)ce (cid:83)(cid:79)eaded (cid:83)a(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74) (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:90)a(cid:86) (cid:179)on or around 8 March 2013(cid:180) 
-timexy,July 2020,"TIMEX3 type=""DATE"" value=""2020-07-01T00:00:00""",4th July 2020 
-DATE,5 July,,"14. On 5 July at 15:45, the Claimant disclosed photos of Keith Richards, the Claimant, "
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",March 2013. The Claimant also disclosed an undated photograph of Ms Heard with 
-timexy,July 2020,"TIMEX3 type=""DATE"" value=""2020-07-01T00:00:00""",6th July 2020 
-timexy,22 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-22T00:00:00""",22 March 2013 could possibly make Ms Heard change or recall the date of Second 
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",March 2013. The Claimant also disclosed an undated photograph of Ms Heard with 
-DATE,"22 
-March",,
-timexy,10 July 2020,"TIMEX3 type=""DATE"" value=""2020-07-10T00:00:00""",Friday 10 July 2020 (22:15)  
-DATE,21 March,,21 March. There is also a photo of Ms Henriques which appears to be at same 
-DATE,"July 16th, 2020",,"July 16th, 2020 "
-timexy,23 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-23T00:00:00""",Script Notes showing that Mr McLagan was only on set on 23 March 2013. 
-DATE,22nd March,,17  Ms Heard maintained that the (cid:181)painting(cid:182) incident took place on 22nd March. (cid:179)Q: The 
-DATE,the 22nd,,"March [7/ 65(c)/ H206.7-8], (cid:76)(cid:87) (cid:90)a(cid:86) c(cid:79)ea(cid:85) (cid:87)(cid:75)a(cid:87) (cid:87)(cid:75)e Defe(cid:81)da(cid:81)(cid:87)(cid:86)(cid:182) case was that the 22nd "
-DATE,Page 1792,,painting incident took place on the 22nd. (Page 1792).  
-timexy,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","having  been one very  striking assault in March 2013, to it be a month of "
-timexy,March  2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","claiming  that  there  were  (cid:179)at  least  three  incidents(cid:180)  in  March  2013,  which "
-timexy,"22 
-March 2013","TIMEX3 type=""DATE"" value=""2013-03-22T00:00:00""",
-timexy,"18  April 
-2016","TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""",
-timexy,18  April  2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""",Order  of  18  April  2016  is  at  [5.1/200/F1219-F1220].  A  helpful  report  of  those  court 
-timexy,18 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""","proceedings from The Guardian, 18 April 2016 is at [11/190/P173-P176]. "
-timexy,10 years,"TIMEX3 type=""DURATION"" value=""P10Y""","importing animals, which attracted a maximum penalty of 10 years jail.  "
-DATE,21 April last year,,animals when arriving by private jet in Brisbane on 21 April last year. 
-timexy,six months,"TIMEX3 type=""DURATION"" value=""P6M""","almost six months ago but commonwealth prosecutors, acting on instruction from "
-timexy,October  2015,"TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00""","4.  As  the  Court  transcript  records:  (cid:179)On  13th  of  October  2015,  Ms  Heard  provided  an "
-DATE,3rd of,,"to the offence, and on 3rd of November 2015, there was an indication that she would "
-timexy,November 2015,"TIMEX3 type=""DATE"" value=""2015-11-01T00:00:00""","to the offence, and on 3rd of November 2015, there was an indication that she would "
-DATE,the previous day,,"5.1. Ms Heard swore an affidavit the previous day, 17 April 2016, in which she set out "
-timexy,17 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-17T00:00:00""","5.1. Ms Heard swore an affidavit the previous day, 17 April 2016, in which she set out "
-timexy,18  April  2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""",submissions  of  the  prosecution  dated  18  April  2016  [5.1/200/F1278-F1284]  at 
-DATE,early February,,dismissed in early February) at para 11 [F1289-F1291]. 
-DATE,"1896-
-1905",,
-timexy,"October 
+timexy,21,August 2014,"TIMEX3 type=""DATE"" value=""2014-08-01T00:00:00""",8.  Fifth Incident: Bahamas detox in August 2014 (ReAmDef ¶8.a.5)  
+DATE,22,DAY 4,,"9.2. See Transcript, DAY 4, page 377-379 "
+DATE,22,DAY 4,,"9.2. See Transcript, DAY 4, page 377-379 "
+timexy,22,three day,"TIMEX3 type=""DURATION"" value=""P3D""",11. Eighth Incident: Australia three day hostage situation (ReAmDef ¶8.a.8-11) 
+DATE,22,DAY 4,,"9.2. See Transcript, DAY 4, page 377-379 "
+timexy,22,November 2015,"TIMEX3 type=""DATE"" value=""2015-11-01T00:00:00""","12. Eleventh Incident: Thanksgiving, November 2015 (Re-Am Def ¶8.a.14) "
+DATE,23,DAY 4,,"See Transcript, DAY 4, page 528, line 8 (cid:177) page 531, line 11. "
+timexy,23,"May 21, 2016","TIMEX3 type=""DATE"" value=""2016-05-21T00:00:00""","14. Fourteenth Incident: May 21, 2016 at the Eastern Columbia (Re-AmDef ¶8(d)-(l)) "
+DATE,23,DAY 4,,"See Transcript, DAY 4, page 528, line 8 (cid:177) page 531, line 11. "
+timexy,24,28 May 2016,"TIMEX3 type=""DATE"" value=""2016-05-28T00:00:00""",28 May 2016 at 6/148E/894.257 (cid:177) F894.259 which Ms Heard states (cid:90)e(cid:85)e (cid:179)photos 
+timexy,24,May 2016,"TIMEX3 type=""DATE"" value=""2016-05-01T00:00:00""",28 May 2016 at 6/148E/894.257 (cid:177) F894.259 which Ms Heard states (cid:90)e(cid:85)e (cid:179)photos 
+timexy,25,21 June 2019,"TIMEX3 type=""DATE"" value=""2019-06-21T00:00:00"""," 
+The  so-ca(cid:79)(cid:79)ed  (cid:179)Pa(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74)  I(cid:81)c(cid:76)de(cid:81)(cid:87)(cid:180)  (cid:82)(cid:85)  I(cid:81)c(cid:76)de(cid:81)(cid:87)  T(cid:90)(cid:82)  c(cid:75)a(cid:81)(cid:74)ed  (cid:85)ad(cid:76)ca(cid:79)(cid:79)(cid:92)  a(cid:81)d  on  multiple 
+occasions in these proceedings.  The Court heard the shifting testimony at trial, but the 
+distance  travelled  since  it  was  first  raised  is  extraordinary.  This  is  relied  upon  by  the 
+C(cid:79)a(cid:76)(cid:80)a(cid:81)(cid:87) (cid:87)(cid:82) (cid:86)(cid:75)(cid:82)(cid:90) (cid:87)(cid:75)a(cid:87) M(cid:86) Hea(cid:85)d(cid:182)(cid:86) (cid:87)e(cid:86)(cid:87)(cid:76)(cid:80)(cid:82)(cid:81)(cid:92) (a(cid:81)d M(cid:86) W(cid:75)(cid:76)(cid:87)(cid:81)e(cid:92) He(cid:81)(cid:85)(cid:76)(cid:84)(cid:88)e(cid:86)(cid:182)(cid:86) (cid:87)e(cid:86)(cid:87)(cid:76)(cid:80)(cid:82)(cid:81)(cid:92) (cid:76)(cid:81) 
+support) cannot be relied upon.  
+ 
+ 
+21 June 2019  
+ "
+timexy,25,12 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-12T00:00:00""","3.  Amended Defence relied (cid:88)(cid:83)(cid:82)(cid:81) (cid:179)disco bloodbath(cid:180) (cid:87)e(cid:91)(cid:87) (cid:80)e(cid:86)(cid:86)a(cid:74)e as referring to this 
+incident; and pleaded that the Claimant (cid:179)subsequently(cid:180) (cid:86)e(cid:81)(cid:87) that text referring to 
+that evening. The date of that text is 12 March 2013. 
+ "
+DATE,26,a couple of days later,,"5.  M(cid:86)  He(cid:81)(cid:85)(cid:76)(cid:84)(cid:88)e(cid:86)(cid:182)  statement  (cid:75)a(cid:86)  (cid:87)(cid:75)e  (cid:75)ead(cid:76)(cid:81)(cid:74)  (cid:179)Pa(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74)  (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87),  8  Ma(cid:85)c(cid:75)  2013(cid:180) 
+[2/61/E105]. She said that she saw that the painting had been taken off the wall, 
+and Ms Heard told her a couple of days later that the Claimant had tried to burn it, 
+a(cid:81)d (cid:90)(cid:75)e(cid:81) (cid:75)e (cid:75)ad fa(cid:76)(cid:79)ed (cid:75)e (cid:179)(cid:86)c(cid:85)a(cid:87)ched (cid:82)(cid:88)(cid:87) he(cid:85) (cid:86)ig(cid:81)a(cid:87)(cid:88)(cid:85)e (cid:87)(cid:82) (cid:85)ead (cid:179)Ta(cid:86)(cid:92)a (cid:89)a(cid:81) Pee(cid:180)(cid:180) 
+WH at 37 [2/61/E106]. Like Ms Heard, Ms Henriques tied the Painting Incident to 
+Keith Richards filming. "
+DATE,26,AH 1st,,6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
+DATE,26,AH 1st,,6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
+DATE,26,AH 1st,,6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
+timexy,26,12 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-12T00:00:00""",text: that text is 12 March 2013. 
+timexy,26,12 December 2019,"TIMEX3 type=""DATE"" value=""2019-12-12T00:00:00""","12 December 2019 
+ "
+timexy,26,15 December 2019,"TIMEX3 type=""DATE"" value=""2019-12-15T00:00:00"""," 
+15 December 2019  
+ "
+timexy,26,6 March 2020,"TIMEX3 type=""DATE"" value=""2020-03-06T00:00:00"""," 
+6 March 2020  
+ "
+timexy,26,June 2020,"TIMEX3 type=""DATE"" value=""2020-06-01T00:00:00"""," 
+20th June 2020  
+ "
+timexy,26,"9  March 
+2013","TIMEX3 type=""DATE"" value=""2013-03-09T00:00:00""","11. AH 5th WS, Ms Heard stated (cid:179)41. O(cid:81) 10 Ma(cid:85)c(cid:75) 2013 I (cid:87)(cid:82)(cid:79)d Ka(cid:87)e ab(cid:82)(cid:88)(cid:87) J(cid:82)(cid:75)(cid:81)(cid:81)(cid:92) (cid:75)(cid:76)(cid:87)(cid:87)(cid:76)(cid:81)(cid:74) 
+me  after  being  upset  about  Tasya.  The  day  after  the  painting  incident  (9  March 
+2013), I sent a text to Kate, telling her (cid:179)The(cid:85)e (cid:90)a(cid:86) l(cid:82)(cid:81)g d(cid:85)a(cid:80)a la(cid:86)(cid:87) (cid:81)igh(cid:87) a(cid:81)d I(cid:182)ll (cid:87)ell 
+he(cid:85) (cid:87)he (cid:86)(cid:87)(cid:82)(cid:85)(cid:92) la(cid:87)e(cid:85)(cid:180).   2.1/71.3/E606.30-31 
+ "
+timexy,26,24 June 2020,"TIMEX3 type=""DATE"" value=""2020-06-24T00:00:00""",On or around 24 June 2020 
+timexy,26,"20  March 
+2013","TIMEX3 type=""DATE"" value=""2013-03-20T00:00:00""","12. The  Claimant  disclosed  an  email  between  the  him  and  Jane  Rose  of  20  March 
+2013 (cid:177) 8/63(a)/I1.1 This email demonstrates that Ms Heard first met Keith Richards 
+on evening of 20 March.  
+ 
+4th July 2020 
+ "
+DATE,26,20 March,,"12. The  Claimant  disclosed  an  email  between  the  him  and  Jane  Rose  of  20  March 
+2013 (cid:177) 8/63(a)/I1.1 This email demonstrates that Ms Heard first met Keith Richards 
+on evening of 20 March.  
+ 
+4th July 2020 
+ "
+timexy,26,July 2020,"TIMEX3 type=""DATE"" value=""2020-07-01T00:00:00""","12. The  Claimant  disclosed  an  email  between  the  him  and  Jane  Rose  of  20  March 
+2013 (cid:177) 8/63(a)/I1.1 This email demonstrates that Ms Heard first met Keith Richards 
+on evening of 20 March.  
+ 
+4th July 2020 
+ "
+timexy,26,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""",6.  M(cid:86) Hea(cid:85)d(cid:182)(cid:86) 1st (cid:90)(cid:76)(cid:87)(cid:81)e(cid:86)(cid:86) (cid:86)(cid:87)a(cid:87)e(cid:80)e(cid:81)(cid:87) (cid:83)(cid:88)(cid:87) (cid:87)(cid:75)e (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:76)(cid:81) (cid:179)March 2013(cid:180): AH 1st at 52 
+DATE,26,that month,,"13. In her 6th WS at 9, said (cid:87)(cid:75)e(cid:85)e (cid:90)e(cid:85)e (cid:179)numerous incidents of violence in March 2013 
+and many fights over that month about the painting. While the incident is as I have 
+described it in my statement and was around that time, I cannot say for certain it 
+was on 8 March 2013(cid:180).  "
+DATE,26,8 March 2013(cid:180,,10. Re-A(cid:80)e(cid:81)ded Defe(cid:81)ce (cid:83)(cid:79)eaded (cid:83)a(cid:76)(cid:81)(cid:87)(cid:76)(cid:81)(cid:74) (cid:76)(cid:81)c(cid:76)de(cid:81)(cid:87) (cid:90)a(cid:86) (cid:179)on or around 8 March 2013(cid:180) 
+timexy,26,July 2020,"TIMEX3 type=""DATE"" value=""2020-07-01T00:00:00""","12. The  Claimant  disclosed  an  email  between  the  him  and  Jane  Rose  of  20  March 
+2013 (cid:177) 8/63(a)/I1.1 This email demonstrates that Ms Heard first met Keith Richards 
+on evening of 20 March.  
+ 
+4th July 2020 
+ "
+DATE,26,5 July,,"14. On 5 July at 15:45, the Claimant disclosed photos of Keith Richards, the Claimant, 
+Ms Heard and Ms Henriques.  This was a photograph of their visit to the set on 21 "
+timexy,27,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","March 2013. The Claimant also disclosed an undated photograph of Ms Heard with 
+Ia(cid:81) McLa(cid:74)a(cid:81), Ke(cid:76)(cid:87)(cid:75) R(cid:76)c(cid:75)a(cid:85)d(cid:86)(cid:182) (cid:78)e(cid:92)b(cid:82)a(cid:85)d (cid:83)(cid:79)a(cid:92)e(cid:85). 
+ 
+6th July 2020 
+ "
+timexy,27,July 2020,"TIMEX3 type=""DATE"" value=""2020-07-01T00:00:00""","March 2013. The Claimant also disclosed an undated photograph of Ms Heard with 
+Ia(cid:81) McLa(cid:74)a(cid:81), Ke(cid:76)(cid:87)(cid:75) R(cid:76)c(cid:75)a(cid:85)d(cid:86)(cid:182) (cid:78)e(cid:92)b(cid:82)a(cid:85)d (cid:83)(cid:79)a(cid:92)e(cid:85). 
+ 
+6th July 2020 
+ "
+timexy,27,22 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-22T00:00:00""","15. AH(cid:182)(cid:86) 7th WS at 5: Ms Heard changed the date of the alleged incident in purported 
+reliance on a photograph of lines of cocaine on a kitchen glass table. There is no 
+apparent causal connection, as to why that photo of drugs taken at her house on 
+22 March 2013 could possibly make Ms Heard change or recall the date of Second 
+Incident. 
+ "
+timexy,27,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","March 2013. The Claimant also disclosed an undated photograph of Ms Heard with 
+Ia(cid:81) McLa(cid:74)a(cid:81), Ke(cid:76)(cid:87)(cid:75) R(cid:76)c(cid:75)a(cid:85)d(cid:86)(cid:182) (cid:78)e(cid:92)b(cid:82)a(cid:85)d (cid:83)(cid:79)a(cid:92)e(cid:85). 
+ 
+6th July 2020 
+ "
+DATE,27,"22 
+March",,"16. In  cross-examination  of  the  Claimant,  the  painting  incident  was  described  to  Mr 
+Depp as taking place (cid:179)on the night in March 2013 (cid:87)ha(cid:87) I(cid:182)(cid:80) a(cid:86)ki(cid:81)g (cid:92)(cid:82)(cid:88) ab(cid:82)(cid:88)(cid:87)(cid:180)  (at 
+p.192), but from the documents shown to the Claimant, Depp-Deuters texts of 22 
+March [7/ 65(c)/ H206.7-8], (cid:76)(cid:87) (cid:90)a(cid:86) c(cid:79)ea(cid:85) (cid:87)(cid:75)a(cid:87) (cid:87)(cid:75)e Defe(cid:81)da(cid:81)(cid:87)(cid:86)(cid:182) case was that the 22nd 
+being the date of the visit to the set and 21st being the attack and jealously over 
+the van Ree painting.  
+ "
+timexy,27,10 July 2020,"TIMEX3 type=""DATE"" value=""2020-07-10T00:00:00""","Friday 10 July 2020 (22:15)  
+ "
+DATE,27,21 March,,"17. T(cid:75)e Defe(cid:81)da(cid:81)(cid:87)(cid:86)(cid:182) disclosed various photographs including the undated photo of Ms 
+Heard, Ms Henriques, the Claimant and Keith Richards apparently at Sweetzer on 
+21 March. There is also a photo of Ms Henriques which appears to be at same 
+occasion. 
+ 
+July 16th, 2020 
+ "
+DATE,27,"July 16th, 2020",,"17. T(cid:75)e Defe(cid:81)da(cid:81)(cid:87)(cid:86)(cid:182) disclosed various photographs including the undated photo of Ms 
+Heard, Ms Henriques, the Claimant and Keith Richards apparently at Sweetzer on 
+21 March. There is also a photo of Ms Henriques which appears to be at same 
+occasion. 
+ 
+July 16th, 2020 
+ "
+timexy,27,23 March 2013,"TIMEX3 type=""DATE"" value=""2013-03-23T00:00:00""","Script Notes showing that Mr McLagan was only on set on 23 March 2013. 
+ "
+DATE,27,22nd March,,"17  Ms Heard maintained that the (cid:181)painting(cid:182) incident took place on 22nd March. (cid:179)Q: The 
+painting  incident  where  you  say  you  went  to  Keith  Richards'  filming?  A.    The 
+painting incident took place on the 22nd. (Page 1792).  
+ "
+DATE,27,the 22nd,,"16. In  cross-examination  of  the  Claimant,  the  painting  incident  was  described  to  Mr 
+Depp as taking place (cid:179)on the night in March 2013 (cid:87)ha(cid:87) I(cid:182)(cid:80) a(cid:86)ki(cid:81)g (cid:92)(cid:82)(cid:88) ab(cid:82)(cid:88)(cid:87)(cid:180)  (at 
+p.192), but from the documents shown to the Claimant, Depp-Deuters texts of 22 
+March [7/ 65(c)/ H206.7-8], (cid:76)(cid:87) (cid:90)a(cid:86) c(cid:79)ea(cid:85) (cid:87)(cid:75)a(cid:87) (cid:87)(cid:75)e Defe(cid:81)da(cid:81)(cid:87)(cid:86)(cid:182) case was that the 22nd 
+being the date of the visit to the set and 21st being the attack and jealously over 
+the van Ree painting.  
+ "
+DATE,27,Page 1792,,"17  Ms Heard maintained that the (cid:181)painting(cid:182) incident took place on 22nd March. (cid:179)Q: The 
+painting  incident  where  you  say  you  went  to  Keith  Richards'  filming?  A.    The 
+painting incident took place on the 22nd. (Page 1792).  
+ "
+timexy,28,March 2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","b.  Secondly, Ms Heard fell back on her recent change of accounts from there 
+having  been one very  striking assault in March 2013, to it be a month of 
+assaults.  By  re-examination  (Trial  Day  13,  page  2033),  Ms  Heard  was 
+claiming  that  there  were  (cid:179)at  least  three  incidents(cid:180)  in  March  2013,  which 
+involved the filming of the Keith Richards documentary.  "
+timexy,28,March  2013,"TIMEX3 type=""DATE"" value=""2013-03-01T00:00:00""","b.  Secondly, Ms Heard fell back on her recent change of accounts from there 
+having  been one very  striking assault in March 2013, to it be a month of 
+assaults.  By  re-examination  (Trial  Day  13,  page  2033),  Ms  Heard  was 
+claiming  that  there  were  (cid:179)at  least  three  incidents(cid:180)  in  March  2013,  which 
+involved the filming of the Keith Richards documentary.  "
+timexy,28,"22 
+March 2013","TIMEX3 type=""DATE"" value=""2013-03-22T00:00:00""","20  Finally, the Court should not that at the time, Ms Heard told Nathan Holmes on 22 
+March 2013 at 12:37 that she was (cid:181)trying to wake(cid:182) Mr Depp [7/1e/H21A.17A], but 
+in  cross-examination  that  M(cid:85)  De(cid:83)(cid:83)  (cid:82)(cid:81)  22  Ma(cid:85)c(cid:75)  (cid:90)a(cid:86)  (cid:179)(cid:82)(cid:81)  a  24  (cid:75)(cid:82)(cid:88)(cid:85) c(cid:82)(cid:78)e-fueled 
+be(cid:81)de(cid:85)(cid:180) (Transcript, Day 11, page 1810) a(cid:81)d M(cid:86) He(cid:81)(cid:85)(cid:76)(cid:84)(cid:88)e(cid:86)(cid:182)(cid:86) e(cid:89)(cid:76)de(cid:81)ce (cid:90)a(cid:86) (cid:87)(cid:75)a(cid:87) 
+was in the kitchen (Transcript Day 13, pages 2123-2124). 
+ "
+timexy,29,"18  April 
+2016","TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00"""," 
+1.  The  Australian  criminal  proceedings  against  Ms  Heard  were  concluded  on  18  April 
+2016 when Ms Heard entered a plea of guilty to a  summary offence of producing a 
+false  or  misleading  document.  A  transcript  is  at  [5.1/201(b)/F1303.3-8].  The  Court 
+Order  of  18  April  2016  is  at  [5.1/200/F1219-F1220].  A  helpful  report  of  those  court 
+proceedings from The Guardian, 18 April 2016 is at [11/190/P173-P176]. "
+timexy,29,18  April  2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00"""," 
+1.  The  Australian  criminal  proceedings  against  Ms  Heard  were  concluded  on  18  April 
+2016 when Ms Heard entered a plea of guilty to a  summary offence of producing a 
+false  or  misleading  document.  A  transcript  is  at  [5.1/201(b)/F1303.3-8].  The  Court 
+Order  of  18  April  2016  is  at  [5.1/200/F1219-F1220].  A  helpful  report  of  those  court 
+proceedings from The Guardian, 18 April 2016 is at [11/190/P173-P176]. "
+timexy,29,18 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00"""," 
+1.  The  Australian  criminal  proceedings  against  Ms  Heard  were  concluded  on  18  April 
+2016 when Ms Heard entered a plea of guilty to a  summary offence of producing a 
+false  or  misleading  document.  A  transcript  is  at  [5.1/201(b)/F1303.3-8].  The  Court 
+Order  of  18  April  2016  is  at  [5.1/200/F1219-F1220].  A  helpful  report  of  those  court 
+proceedings from The Guardian, 18 April 2016 is at [11/190/P173-P176]. "
+timexy,29,10 years,"TIMEX3 type=""DURATION"" value=""P10Y""","(cid:179)[The  magi(cid:86)(cid:87)(cid:85)a(cid:87)e]  earlier  dismissed  criminal  charges  against  Heard  of  illegally 
+importing animals, which attracted a maximum penalty of 10 years jail.  
+This  was  in  exchange  for  Heard  pleading  guilty  to  making  a  false  customs 
+declaration by ticking a box on her passenger arrival card indicating she had no 
+animals when arriving by private jet in Brisbane on 21 April last year. 
+Heard offered to cop the plea in exchange for dropping of the more serious charges 
+almost six months ago but commonwealth prosecutors, acting on instruction from 
+deput(cid:92) prime minister Barnab(cid:92) Jo(cid:92)ce(cid:182)s agriculture department, rejected the offer(cid:180) "
+DATE,29,21 April last year,,"(cid:179)[The  magi(cid:86)(cid:87)(cid:85)a(cid:87)e]  earlier  dismissed  criminal  charges  against  Heard  of  illegally 
+importing animals, which attracted a maximum penalty of 10 years jail.  
+This  was  in  exchange  for  Heard  pleading  guilty  to  making  a  false  customs 
+declaration by ticking a box on her passenger arrival card indicating she had no 
+animals when arriving by private jet in Brisbane on 21 April last year. 
+Heard offered to cop the plea in exchange for dropping of the more serious charges 
+almost six months ago but commonwealth prosecutors, acting on instruction from 
+deput(cid:92) prime minister Barnab(cid:92) Jo(cid:92)ce(cid:182)s agriculture department, rejected the offer(cid:180) "
+timexy,29,six months,"TIMEX3 type=""DURATION"" value=""P6M""","(cid:179)[The  magi(cid:86)(cid:87)(cid:85)a(cid:87)e]  earlier  dismissed  criminal  charges  against  Heard  of  illegally 
+importing animals, which attracted a maximum penalty of 10 years jail.  
+This  was  in  exchange  for  Heard  pleading  guilty  to  making  a  false  customs 
+declaration by ticking a box on her passenger arrival card indicating she had no 
+animals when arriving by private jet in Brisbane on 21 April last year. 
+Heard offered to cop the plea in exchange for dropping of the more serious charges 
+almost six months ago but commonwealth prosecutors, acting on instruction from 
+deput(cid:92) prime minister Barnab(cid:92) Jo(cid:92)ce(cid:182)s agriculture department, rejected the offer(cid:180) "
+timexy,29,October  2015,"TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00"""," 
+4.  As  the  Court  transcript  records:  (cid:179)On  13th  of  October  2015,  Ms  Heard  provided  an 
+unsworn statement to the Prosecution regarding her actions and state of mind relevant "
+DATE,30,3rd of,,"to the offence, and on 3rd of November 2015, there was an indication that she would 
+plea to the charge that she made the false statement, on the basis that the other two 
+charges were discontinued. This has, in effect, occurred today (cid:171)(cid:180) [F1303.5]  
+ "
+timexy,30,November 2015,"TIMEX3 type=""DATE"" value=""2015-11-01T00:00:00""","to the offence, and on 3rd of November 2015, there was an indication that she would 
+plea to the charge that she made the false statement, on the basis that the other two 
+charges were discontinued. This has, in effect, occurred today (cid:171)(cid:180) [F1303.5]  
+ "
+DATE,30,the previous day,,"5.1. Ms Heard swore an affidavit the previous day, 17 April 2016, in which she set out 
+matters  she  relied  upon  in  mitigation,  namely  blaming  others,  Kate  James  and 
+Kevin  Murphy,  see  paras  26-38  [5.1/200/F1229-F1242].  The  magistrate  in 
+sentencing relied upon that evidence incl(cid:88)ding concl(cid:88)ding (cid:87)ha(cid:87) (cid:179)(cid:171)Ms Heard was 
+unaware  of  the  documentation  for  the  dogs(cid:182)  importation  into  Australia  had  not 
+been complete(cid:180) [5.1/201(b)/F1303.6]. "
+timexy,30,17 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-17T00:00:00""","5.1. Ms Heard swore an affidavit the previous day, 17 April 2016, in which she set out 
+matters  she  relied  upon  in  mitigation,  namely  blaming  others,  Kate  James  and 
+Kevin  Murphy,  see  paras  26-38  [5.1/200/F1229-F1242].  The  magistrate  in 
+sentencing relied upon that evidence incl(cid:88)ding concl(cid:88)ding (cid:87)ha(cid:87) (cid:179)(cid:171)Ms Heard was 
+unaware  of  the  documentation  for  the  dogs(cid:182)  importation  into  Australia  had  not 
+been complete(cid:180) [5.1/201(b)/F1303.6]. "
+timexy,30,18  April  2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""","5.2. There  had  been  more  serious  charges,  which  were  dropped.  See  (i)  written 
+submissions  of  the  prosecution  dated  18  April  2016  [5.1/200/F1278-F1284]  at 
+para 7: (cid:179)the two other charges having been withdrawn and the plea having been 
+proposed  at  an  earlier  time(cid:171)(cid:180)  F1279  and  (ii)  the  written  submissions  of  Ms 
+Hea(cid:85)d(cid:182)(cid:86) 
+the  same  date 
+[5.1/200/F1288]. Further, as those submissions on M(cid:86) Hea(cid:85)d(cid:182)(cid:86) behalf made clear, 
+she was relying on a mistake and that staff had obtained permission for the dogs; 
+the  Court  is  invited  to  read  para  8  of  those  submissions  in  full  [F1289].  Her 
+submissions continued: (cid:179)The details of her belief and the bases for it are described 
+in the sworn declaration of Ms Heard. It is supported by the sworn declaration by 
+Kevin Murph(cid:92), who is the estate manager for Ms Heard(cid:182)s husband, Mr Depp. The 
+Crown  does  not  challenge  this  evidence.(cid:180)  That  is  a  reference  to  M(cid:86)  Hea(cid:85)d(cid:182)(cid:86) 
+affida(cid:89)i(cid:87) and M(cid:85) M(cid:88)(cid:85)(cid:83)h(cid:92)(cid:182)(cid:86) decla(cid:85)a(cid:87)ion da(cid:87)ed 13 Oc(cid:87)obe(cid:85) 2015 [5.1/201(a)/F1303.1-
+2]  "
+DATE,30,early February,,"5.3. That written evidence was relied upon by Ms Heard, see written submissions at 
+para 10 inc. footnotes Ms Heard then went on to blame Kate James (who she had 
+dismissed in early February) at para 11 [F1289-F1291]. "
+DATE,30,"1896-
+1905",," 
+6.  The Court is invited to read in full from the Transcripts how Ms Heard responded to 
+questions  in  cross-examination  on  these  matters  and  in  particular  to  questions  that 
+she (a) had put pressure on Mr Murphy to provide a declaration to assist her and (b) 
+had sought to shift the blame onto Kate James. See Transcript, DAY 12, pages 1896-
+1905.  "
+timexy,30,"October 
 
 2015","TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00""",
-timexy,"11 October 
-2015","TIMEX3 type=""DATE"" value=""2015-10-11T00:00:00""",
-timexy,October 2015,"TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00""",8.1. Ms Heard had not (cid:177) at the time of the above exchanges in October 2015 about 
-timexy,18 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""",recorded in the transcript of the 18 April 2016 hearing) offering to do so as part of 
-timexy,October  2015,"TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00""","8.2. At  that  time,  i.e.  October  2015,  Ms  Heard  had  every  reason  to  ask  someone "
-timexy,13  October  2015,"TIMEX3 type=""DATE"" value=""2015-10-13T00:00:00""",Murphy  felt  compelled  to  do  so  in  his  declaration  of  13  October  2015 
-timexy,April 2016,"TIMEX3 type=""DATE"" value=""2016-04-01T00:00:00""",recorded in the transcript of the 18 April 2016 hearing) offering to do so as part of 
-timexy,27 MAY 2016,"TIMEX3 type=""DATE"" value=""2016-05-27T00:00:00""",COURTHOUSE ON 27 MAY 2016  
-timexy,27  May  2016,"TIMEX3 type=""DATE"" value=""2016-05-27T00:00:00""",1.  It  was  put  to Ms  Heard  that  her  attendance  at  the  Courthouse  on  27  May  2016 
-DATE,May yesterday,,27th May yesterday -- there are two questions that I want to ask. There is 
-timexy,17 June 2016,"TIMEX3 type=""DATE"" value=""2016-06-17T00:00:00""",hearing. The hearing was listed for 17 June 2016 [4/112/F677].  
-DATE,"7
+timexy,30,"11 October 
+2015","TIMEX3 type=""DATE"" value=""2015-10-11T00:00:00""","7.2. When pressed on the documents, including the email at F885 dated 11 October 
+2015, Ms Heard again denied that she had intended to try to pressure anyone to 
+provide a helpful statement: "
+timexy,31,October 2015,"TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00""","8.1. Ms Heard had not (cid:177) at the time of the above exchanges in October 2015 about 
+obtaining evidence from Kate James (cid:177) pleaded guilty to any charge. She was (as 
+recorded in the transcript of the 18 April 2016 hearing) offering to do so as part of 
+a plea bargain.  
+ "
+timexy,31,18 April 2016,"TIMEX3 type=""DATE"" value=""2016-04-18T00:00:00""","8.1. Ms Heard had not (cid:177) at the time of the above exchanges in October 2015 about 
+obtaining evidence from Kate James (cid:177) pleaded guilty to any charge. She was (as 
+recorded in the transcript of the 18 April 2016 hearing) offering to do so as part of 
+a plea bargain.  
+ "
+timexy,31,October  2015,"TIMEX3 type=""DATE"" value=""2015-10-01T00:00:00""","8.2. At  that  time,  i.e.  October  2015,  Ms  Heard  had  every  reason  to  ask  someone 
+(whether  Kevin  Murphy  or Kate  James)  to  lie  for  her  in  order to  strengthen  her 
+hand in that plea bargaining, to get the more serious charges dropped (cid:177) and Mr 
+Murphy  felt  compelled  to  do  so  in  his  declaration  of  13  October  2015 
+[5.1/201(a)/F1303.1-2]. "
+timexy,31,13  October  2015,"TIMEX3 type=""DATE"" value=""2015-10-13T00:00:00""","8.2. At  that  time,  i.e.  October  2015,  Ms  Heard  had  every  reason  to  ask  someone 
+(whether  Kevin  Murphy  or Kate  James)  to  lie  for  her  in  order to  strengthen  her 
+hand in that plea bargaining, to get the more serious charges dropped (cid:177) and Mr 
+Murphy  felt  compelled  to  do  so  in  his  declaration  of  13  October  2015 
+[5.1/201(a)/F1303.1-2]. "
+timexy,31,April 2016,"TIMEX3 type=""DATE"" value=""2016-04-01T00:00:00""","8.1. Ms Heard had not (cid:177) at the time of the above exchanges in October 2015 about 
+obtaining evidence from Kate James (cid:177) pleaded guilty to any charge. She was (as 
+recorded in the transcript of the 18 April 2016 hearing) offering to do so as part of 
+a plea bargain.  
+ "
+timexy,36,27 MAY 2016,"TIMEX3 type=""DATE"" value=""2016-05-27T00:00:00""","________________________________________________________________ 
+ANNEX E (cid:55)O CLAIMAN(cid:55)(cid:182)(cid:54) CLO(cid:54)ING (cid:54)KELETON (cid:177)  
+CON(cid:54)IDERA(cid:55)ION OF M(cid:54) HEARD(cid:182)(cid:54) E(cid:57)IDENCE A(cid:55)(cid:55)ENDANCE A(cid:55) (cid:55)HE 
+COURTHOUSE ON 27 MAY 2016  
+________________________________________________________________ "
+timexy,36,27  May  2016,"TIMEX3 type=""DATE"" value=""2016-05-27T00:00:00""","1.  It  was  put  to Ms  Heard  that  her  attendance  at  the  Courthouse  on  27  May  2016 
+was a publicity stunt  (cid:177) her attendance being unnecessary (See Transcript, DAY 
+12, pages 1991-2 of the Transcript):  "
+DATE,36,May yesterday,,"(cid:179)(cid:171) O(cid:81) (cid:87)he (cid:85)e(cid:86)(cid:87)(cid:85)ai(cid:81)i(cid:81)g (cid:82)(cid:85)de(cid:85)  -- we have had the footage played to you of 
+27th May yesterday -- there are two questions that I want to ask. There is 
+no limitation whatsoever upon you or your lawyers as to how much detail 
+is in an application, is there? "
+timexy,37,17 June 2016,"TIMEX3 type=""DATE"" value=""2016-06-17T00:00:00""","4.  The  form  requesting  a  Temporary  Restraining  Order  was  completed  on  Ms 
+Heard(cid:182)s behalf on 26 Ma(cid:92) 2016. It states, in terms, that upon granting or refusing 
+the TRO application, the Court will schedule a hearing on the petitioner(cid:182)s request 
+(see  Section  25  of Form  DV-100  [4/111/F646]). The  next form  in  the  procedure 
+(DV-109) shows, at Section 4, that any orders granted on the initial request are 
+granted  (or  refused)  until  the  court  hearing  [4/111/F667].  Section  5  [on  F668] 
+makes  it  clear  that  any  order  made  on  filing  the  application  is  made  until  the 
+hearing. The hearing was listed for 17 June 2016 [4/112/F677].  "
+DATE,55,"7
  
  
  
@@ -145,4 +399,56 @@ DATE,"7
  
  
  
-e",,
+e",,"  
+ 
+ 
+ 
+ 
+7
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+e
+x
+p
+r
+e
+s
+s
+e
+d
+ 
+c
+o
+n
+c
+e
+r
+n
+ 
+t
+o
+ 
+y
+o
+u
+r
+ 
+h
+u
+s
+b
+a
+n
+d
+a
+n
+d
+D"

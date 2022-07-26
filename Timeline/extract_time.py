@@ -19,40 +19,45 @@ config = {
 }
 nlp.add_pipe("timexy", config=config, before="ner")
 
-# doc = pdf_reader("Documents/depp_v_ngn_closing_claimant.pdf", nlp)
-# doc = pdf_reader("Documents/depp_v_ngn_closing_annex.pdf", nlp)
-doc = pdf_reader("Documents/depp_v_ngn_closing_defendant_readable.pdf", nlp)
-df = pd.DataFrame(columns=["label", "text", "id", "surrounding_text"])
-counter = 0
-for i in range(len(doc.ents)):
-    e = doc.ents[i]
-    label = e.label_
-    text = e.text.strip()
-    id = e.kb_id_
-    if label == "timexy" or label == "DATE":
-        pg = e[0]._.page_number
-        lines = str(doc._.page(pg)).split("\n")
-        lines = [i for i in lines if i] # remove all empty lines
-        surrounding_text = ""
-        for line in lines:
-            if text in line:
-                surrounding_text = line
-                break
-        if label == "DATE":
-            false_positive = False
-            for word in line.split():
-                if "[" not in word and text in word and "]" not in word:
-                    false_positive = True
+
+def process_pdf(pdf_path, csv_path):
+    doc = pdf_reader(pdf_path, nlp)
+    df = pd.DataFrame(columns=["label", "page", "text", "id", "surrounding_text"])
+    counter = 0
+    for i in range(len(doc.ents)):
+        e = doc.ents[i]
+        label = e.label_
+        text = e.text.strip()
+        time_id = e.kb_id_
+        if label == "timexy" or label == "DATE":
+            pg = e[0]._.page_number
+            lines = str(doc._.page(pg)).split("\n\n")
+            lines = [i for i in lines if i] # remove all empty lines
+            surrounding_text = ""
+            for line in lines:
+                if text in line:
+                    surrounding_text = line
                     break
-            if false_positive: continue
+            if label == "DATE":
+                false_positive = False
+                for word in line.split():
+                    if "[" not in word and text in word and "]" not in word:
+                        false_positive = True
+                        break
+                if false_positive: continue
 
-        counter += 1
-        print(str(i + 1) + "/" + str(len(doc.ents)) + " [pg. " + str(pg) + "] : " + label + " | " + text + " | " + id + " | " + surrounding_text)
-        df = df.append({"label":label, "text":text, "id":id, "surrounding_text":surrounding_text}, ignore_index=True)
-print(str(counter) + "/" + str(len(doc.ents)) + " date-times found")
+            counter += 1
+            print(str(i + 1) + "/" + str(len(doc.ents)) + " [pg. " + str(pg) + "] : " + label + " | " + text + " | " + time_id + " | " + surrounding_text)
+            df = df.append({"label":label, "page":pg, "text":text, "id":time_id, "surrounding_text":surrounding_text}, ignore_index=True)
+    print("===========================================================================================================")
+    print(str(counter) + "/" + str(len(doc.ents)) + " date-times found, " + csv_path + " created")
+    print("===========================================================================================================")
 
-# filepath = Path("Data/depp_v_ngn_closing_claimant.csv")
-# filepath = Path("Data/depp_v_ngn_closing_annex.csv")
-filepath = Path("Data/depp_v_ngn_closing_defendant.csv")
-filepath.parent.mkdir(parents=True, exist_ok=True)
-df.to_csv(filepath, index=False)
+    filepath = Path(csv_path)
+    filepath.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(filepath, index=False)
+
+
+process_pdf("Documents/depp_v_ngn_closing_claimant.pdf", "Data/depp_v_ngn_closing_claimant.csv")
+process_pdf("Documents/depp_v_ngn_closing_annex.pdf", "Data/depp_v_ngn_closing_annex.csv")
+process_pdf("Documents/depp_v_ngn_closing_defendant_readable.pdf", "Data/depp_v_ngn_closing_defendant.csv")
