@@ -5,7 +5,7 @@ Contains audio files pertaining to Harvey Weinstein in `mp3` and `wav` fomat
 
 ## Data
 ### Depp & Heard
-Scraped files from Fairfax County, Virginia site, link [here](https://ffxtrail.azurewebsites.net/). One table respective to Heard and one to Depp. Each table contains all the evidence files used on X date and the related link, as well as file format.
+Scraped files from Fairfax County, Virginia site, link [here](https://ffxtrail.azurewebsites.net/). One table respective to Heard and one to Depp. Each table contains all the evidence files used on X date and the related link, as well as file format. `depp_times.csv` and `heard_times.csv` contain extracted time data values from all of the pdfs. 
 ### FLOWS
 Manually scraped stories on domestic abuse from [FLOWS](https://www.flows.org.uk/support-for-women/am-i-being-abused/case-studies).
 ### UQ Case Studies
